@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_6cd02bb9b9f6112dc773c3636df944cd {
+                #map_df9f1e4ea518fd319ea4e08f57467d9a {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,16 +54,16 @@
 <body>
     
     
-            <div class="folium-map" id="map_6cd02bb9b9f6112dc773c3636df944cd" ></div>
+            <div class="folium-map" id="map_df9f1e4ea518fd319ea4e08f57467d9a" ></div>
         
 </body>
 <script>
     
     
-            var map_6cd02bb9b9f6112dc773c3636df944cd = L.map(
-                "map_6cd02bb9b9f6112dc773c3636df944cd",
+            var map_df9f1e4ea518fd319ea4e08f57467d9a = L.map(
+                "map_df9f1e4ea518fd319ea4e08f57467d9a",
                 {
-                    center: [36.0, 138.0],
+                    center: [35.37328779761904, 136.84508159523807],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 5,
@@ -73,12 +73,13 @@
 
                 }
             );
+            L.control.scale().addTo(map_df9f1e4ea518fd319ea4e08f57467d9a);
 
             
 
         
     
-            var tile_layer_6427e822dfeaee14f0879a9101c25080 = L.tileLayer(
+            var tile_layer_52b222d836d515e3d8186529706ffa98 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,34 +96,51 @@
             );
         
     
-            tile_layer_6427e822dfeaee14f0879a9101c25080.addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            tile_layer_52b222d836d515e3d8186529706ffa98.addTo(map_df9f1e4ea518fd319ea4e08f57467d9a);
         
     
-            var marker_ad9cd33fac195e36249da8cf0ac1b52e = L.marker(
-                [33.96267, 130.94186],
+            var feature_group_98f3731f3a942909afe1f166cee8a815 = L.featureGroup(
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            );
         
     
-        var popup_e38680e9f7e02829e704336db4cb4682 = L.popup({
-  "maxWidth": 320,
+            var marker_96c1ee1b677c52fe6f76e17a66c63660 = L.marker(
+                [33.995977, 130.983912],
+                {
+}
+            ).addTo(feature_group_98f3731f3a942909afe1f166cee8a815);
+        
+    
+            var icon_da3ef7990adf6601072c782b2ab65fe3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd80fcdfb55ff64aebe37514bfd8591b = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_4762e8c21236428aff9bed8497ed0815 = $(`<div id="html_4762e8c21236428aff9bed8497ed0815" style="width: 100.0%; height: 100.0%;"><b>下関市立歴史博物館</b><br>都道府県: 山口県<br>史料群例: 豊永長吉宛品川弥二郎書簡<br>件数: 1<br><small>下関市立歴史博物館</small></div>`)[0];
-                popup_e38680e9f7e02829e704336db4cb4682.setContent(html_4762e8c21236428aff9bed8497ed0815);
+                var html_4aebdddad7e2e2ca7fa4c31252318dc9 = $(`<div id="html_4aebdddad7e2e2ca7fa4c31252318dc9" style="width: 100.0%; height: 100.0%;"><b>下関市立歴史博物館</b><br>都道府県: 山口県<br>地域ブロック: 中四国<br>所収史料群名: 豊永長吉宛品川弥二郎書簡<br>所蔵確認点数: 1<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_fd80fcdfb55ff64aebe37514bfd8591b.setContent(html_4aebdddad7e2e2ca7fa4c31252318dc9);
             
         
 
-        marker_ad9cd33fac195e36249da8cf0ac1b52e.bindPopup(popup_e38680e9f7e02829e704336db4cb4682)
+        marker_96c1ee1b677c52fe6f76e17a66c63660.bindPopup(popup_fd80fcdfb55ff64aebe37514bfd8591b)
         ;
 
         
     
     
-            marker_ad9cd33fac195e36249da8cf0ac1b52e.bindTooltip(
+            marker_96c1ee1b677c52fe6f76e17a66c63660.bindTooltip(
                 `<div>
                      下関市立歴史博物館
                  </div>`,
@@ -132,31 +150,45 @@
             );
         
     
-            var marker_7acadfe468ecf2331695c62da3967bc4 = L.marker(
-                [34.17898, 131.47368],
+                marker_96c1ee1b677c52fe6f76e17a66c63660.setIcon(icon_da3ef7990adf6601072c782b2ab65fe3);
+            
+    
+            var marker_8a21c10b45caaa602dd34565c18272fc = L.marker(
+                [34.183, 131.474],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_98f3731f3a942909afe1f166cee8a815);
         
     
-        var popup_cb38a9864d930f25cf070022299550bc = L.popup({
-  "maxWidth": 320,
+            var icon_f03b0cb63745892df23da4c9c0110b89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fda8d33e47ef73c729c2a78a77dea42d = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_efdf10e9641a9382edb2b10736cfebf0 = $(`<div id="html_efdf10e9641a9382edb2b10736cfebf0" style="width: 100.0%; height: 100.0%;"><b>山口県文書館</b><br>都道府県: 山口県<br>史料群例: 諸家文書 / 小川五郎収集史料 / 安部家文書 / 阿武家文書(美祢市) / 石川家文書<br>件数: 0<br><small>山口県文書館</small></div>`)[0];
-                popup_cb38a9864d930f25cf070022299550bc.setContent(html_efdf10e9641a9382edb2b10736cfebf0);
+                var html_4f5b3c0c1ae2cbd0b07bfab0ccd1a346 = $(`<div id="html_4f5b3c0c1ae2cbd0b07bfab0ccd1a346" style="width: 100.0%; height: 100.0%;"><b>山口県文書館</b><br>都道府県: 山口県<br>地域ブロック: 中四国<br>所収史料群名: 諸家文書 / 小川五郎収集史料 / 安部家文書 / 阿武家文書(美祢市) / 石川家文書<br>調査済: 0.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_fda8d33e47ef73c729c2a78a77dea42d.setContent(html_4f5b3c0c1ae2cbd0b07bfab0ccd1a346);
             
         
 
-        marker_7acadfe468ecf2331695c62da3967bc4.bindPopup(popup_cb38a9864d930f25cf070022299550bc)
+        marker_8a21c10b45caaa602dd34565c18272fc.bindPopup(popup_fda8d33e47ef73c729c2a78a77dea42d)
         ;
 
         
     
     
-            marker_7acadfe468ecf2331695c62da3967bc4.bindTooltip(
+            marker_8a21c10b45caaa602dd34565c18272fc.bindTooltip(
                 `<div>
                      山口県文書館
                  </div>`,
@@ -166,31 +198,45 @@
             );
         
     
-            var marker_4e417acce400c3179a89d9b9ae985f55 = L.marker(
-                [34.41414, 131.39913],
+                marker_8a21c10b45caaa602dd34565c18272fc.setIcon(icon_f03b0cb63745892df23da4c9c0110b89);
+            
+    
+            var marker_69e845e6f32b5e374cde498c955ce09f = L.marker(
+                [34.413291, 131.390467],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_98f3731f3a942909afe1f166cee8a815);
         
     
-        var popup_e3a350ff0a1973d8bc9c1e1ca47e00c8 = L.popup({
-  "maxWidth": 320,
+            var icon_9e8fb9bd6950f71d7c564a0429b3ef3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c180e333e8e765638ee272a9abaed84 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_ce2dfdb466a3df2dbcb6b2092252293a = $(`<div id="html_ce2dfdb466a3df2dbcb6b2092252293a" style="width: 100.0%; height: 100.0%;"><b>萩博物館</b><br>都道府県: 山口県<br>史料群例: <br>件数: 0<br><small>萩博物館</small></div>`)[0];
-                popup_e3a350ff0a1973d8bc9c1e1ca47e00c8.setContent(html_ce2dfdb466a3df2dbcb6b2092252293a);
+                var html_bde9ff8f953836ec7a0a9152ee2edd1f = $(`<div id="html_bde9ff8f953836ec7a0a9152ee2edd1f" style="width: 100.0%; height: 100.0%;"><b>萩博物館</b><br>都道府県: 山口県<br>地域ブロック: 中四国<br>調査済: 1.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_2c180e333e8e765638ee272a9abaed84.setContent(html_bde9ff8f953836ec7a0a9152ee2edd1f);
             
         
 
-        marker_4e417acce400c3179a89d9b9ae985f55.bindPopup(popup_e3a350ff0a1973d8bc9c1e1ca47e00c8)
+        marker_69e845e6f32b5e374cde498c955ce09f.bindPopup(popup_2c180e333e8e765638ee272a9abaed84)
         ;
 
         
     
     
-            marker_4e417acce400c3179a89d9b9ae985f55.bindTooltip(
+            marker_69e845e6f32b5e374cde498c955ce09f.bindTooltip(
                 `<div>
                      萩博物館
                  </div>`,
@@ -200,31 +246,45 @@
             );
         
     
-            var marker_b1dcfa735ed1780f5915cc0a5a12cc7d = L.marker(
-                [34.61068, 131.60483],
+                marker_69e845e6f32b5e374cde498c955ce09f.setIcon(icon_9e8fb9bd6950f71d7c564a0429b3ef3c);
+            
+    
+            var marker_ed57e4e87caf4ca190185e666470d16a = L.marker(
+                [34.62, 131.6],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_98f3731f3a942909afe1f166cee8a815);
         
     
-        var popup_40284f2ac5c1519b502d91ea1071e225 = L.popup({
-  "maxWidth": 320,
+            var icon_1aa0b9ac76c916bd083c5c642750b018 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_121e6a633aa02550657e3c65ad0dec69 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_26b99006027d0e0a3737b86e70918c10 = $(`<div id="html_26b99006027d0e0a3737b86e70918c10" style="width: 100.0%; height: 100.0%;"><b>須佐歴史民俗資料館</b><br>都道府県: 山口県<br>史料群例: <br>件数: 0<br><small>須佐歴史民俗資料館</small></div>`)[0];
-                popup_40284f2ac5c1519b502d91ea1071e225.setContent(html_26b99006027d0e0a3737b86e70918c10);
+                var html_0b4a249b516300689dfb53212889f868 = $(`<div id="html_0b4a249b516300689dfb53212889f868" style="width: 100.0%; height: 100.0%;"><b>須佐歴史民俗資料館</b><br>都道府県: 山口県<br>地域ブロック: 中四国<br>調査済: 1.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_121e6a633aa02550657e3c65ad0dec69.setContent(html_0b4a249b516300689dfb53212889f868);
             
         
 
-        marker_b1dcfa735ed1780f5915cc0a5a12cc7d.bindPopup(popup_40284f2ac5c1519b502d91ea1071e225)
+        marker_ed57e4e87caf4ca190185e666470d16a.bindPopup(popup_121e6a633aa02550657e3c65ad0dec69)
         ;
 
         
     
     
-            marker_b1dcfa735ed1780f5915cc0a5a12cc7d.bindTooltip(
+            marker_ed57e4e87caf4ca190185e666470d16a.bindTooltip(
                 `<div>
                      須佐歴史民俗資料館
                  </div>`,
@@ -234,31 +294,45 @@
             );
         
     
-            var marker_e725b3daffbf48a7c9d7cabc94dd3ee9 = L.marker(
-                [34.31854, 133.85647],
+                marker_ed57e4e87caf4ca190185e666470d16a.setIcon(icon_1aa0b9ac76c916bd083c5c642750b018);
+            
+    
+            var marker_5f23a72aba205805124fa212f12ec6f7 = L.marker(
+                [34.313306, 133.852017],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_98f3731f3a942909afe1f166cee8a815);
         
     
-        var popup_370318f2794268da775f7185f785f8ea = L.popup({
-  "maxWidth": 320,
+            var icon_cbda9be996f6b52931fc29ffe2545744 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c021812bdaf183448c659337fe535253 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_f828302aaaacd58d7456450c199573db = $(`<div id="html_f828302aaaacd58d7456450c199573db" style="width: 100.0%; height: 100.0%;"><b>鎌田共済会郷土博物館</b><br>都道府県: 香川県<br>史料群例: 鎌田勝太郎関係文書<br>件数: 0<br><small>鎌田共済会郷土博物館</small></div>`)[0];
-                popup_370318f2794268da775f7185f785f8ea.setContent(html_f828302aaaacd58d7456450c199573db);
+                var html_e16dba631bb255f5390e27a12c2f5df3 = $(`<div id="html_e16dba631bb255f5390e27a12c2f5df3" style="width: 100.0%; height: 100.0%;"><b>鎌田共済会郷土博物館</b><br>〒762-0044 香川県坂出市本町1丁目1−24<br>都道府県: 香川県<br>地域ブロック: 中四国<br>所収史料群名: 鎌田勝太郎関係文書<br>調査済: 1.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_c021812bdaf183448c659337fe535253.setContent(html_e16dba631bb255f5390e27a12c2f5df3);
             
         
 
-        marker_e725b3daffbf48a7c9d7cabc94dd3ee9.bindPopup(popup_370318f2794268da775f7185f785f8ea)
+        marker_5f23a72aba205805124fa212f12ec6f7.bindPopup(popup_c021812bdaf183448c659337fe535253)
         ;
 
         
     
     
-            marker_e725b3daffbf48a7c9d7cabc94dd3ee9.bindTooltip(
+            marker_5f23a72aba205805124fa212f12ec6f7.bindTooltip(
                 `<div>
                      鎌田共済会郷土博物館
                  </div>`,
@@ -268,31 +342,45 @@
             );
         
     
-            var marker_d9c7ea66880b3110c6396af05e2c0a0c = L.marker(
-                [33.4977846, 133.2887416],
+                marker_5f23a72aba205805124fa212f12ec6f7.setIcon(icon_cbda9be996f6b52931fc29ffe2545744);
+            
+    
+            var marker_bf7ef42f08f1335bf18b85377a3f8f9e = L.marker(
+                [33.5, 133.29],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_98f3731f3a942909afe1f166cee8a815);
         
     
-        var popup_acaa0602da9e064d3bda940a6f9bdb65 = L.popup({
-  "maxWidth": 320,
+            var icon_2a46304bc5e64c62c8160a7a5f38589e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_889cb50a3e4abf65d1e21f25a4898c9e = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_f9ad970c1f15283d84ea5f51d2b9c862 = $(`<div id="html_f9ad970c1f15283d84ea5f51d2b9c862" style="width: 100.0%; height: 100.0%;"><b>佐川町立青山文庫</b><br>都道府県: 高知県<br>史料群例: 田中光顕関係文書<br>件数: 1<br><small>佐川町立青山文庫, 長者佐川線, 甲, 佐川町, 高岡郡, 高知県, 789-1201, 日本</small></div>`)[0];
-                popup_acaa0602da9e064d3bda940a6f9bdb65.setContent(html_f9ad970c1f15283d84ea5f51d2b9c862);
+                var html_4bced74444adc1ca2dff19ef3b670219 = $(`<div id="html_4bced74444adc1ca2dff19ef3b670219" style="width: 100.0%; height: 100.0%;"><b>佐川町立青山文庫</b><br>高知県高岡郡佐川町甲1453-1<br>都道府県: 高知県<br>地域ブロック: 中四国<br>所収史料群名: 田中光顕関係文書<br>所蔵確認点数: 2<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_889cb50a3e4abf65d1e21f25a4898c9e.setContent(html_4bced74444adc1ca2dff19ef3b670219);
             
         
 
-        marker_d9c7ea66880b3110c6396af05e2c0a0c.bindPopup(popup_acaa0602da9e064d3bda940a6f9bdb65)
+        marker_bf7ef42f08f1335bf18b85377a3f8f9e.bindPopup(popup_889cb50a3e4abf65d1e21f25a4898c9e)
         ;
 
         
     
     
-            marker_d9c7ea66880b3110c6396af05e2c0a0c.bindTooltip(
+            marker_bf7ef42f08f1335bf18b85377a3f8f9e.bindTooltip(
                 `<div>
                      佐川町立青山文庫
                  </div>`,
@@ -302,31 +390,54 @@
             );
         
     
-            var marker_5f60b037d2c2bfa163ecd29cc2a03434 = L.marker(
-                [31.59761, 130.55733],
-                {
-}
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+                marker_bf7ef42f08f1335bf18b85377a3f8f9e.setIcon(icon_2a46304bc5e64c62c8160a7a5f38589e);
+            
+    
+            feature_group_98f3731f3a942909afe1f166cee8a815.addTo(map_df9f1e4ea518fd319ea4e08f57467d9a);
         
     
-        var popup_203cd2551d6fe60185237ceec2bab85d = L.popup({
-  "maxWidth": 320,
+            var feature_group_1564f8edbd2f84a8b0c6e77f3e21de99 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_f9da04a0fb122838b3573820b4850caa = L.marker(
+                [31.598601, 130.554599],
+                {
+}
+            ).addTo(feature_group_1564f8edbd2f84a8b0c6e77f3e21de99);
+        
+    
+            var icon_54cfc9de992b3d35e0dc8c1f0b509f3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkpurple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d329f0e570b71e85689e10d0b5ca094 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_f5a3a51036003a4814d64d0f30e3b5ff = $(`<div id="html_f5a3a51036003a4814d64d0f30e3b5ff" style="width: 100.0%; height: 100.0%;"><b>鹿児島県歴史資料センター黎明館</b><br>都道府県: 鹿児島県<br>史料群例: 中井弘関係文書 / 黒田清隆関係文書<br>件数: 2<br><small>鹿児島県歴史資料センター黎明館</small></div>`)[0];
-                popup_203cd2551d6fe60185237ceec2bab85d.setContent(html_f5a3a51036003a4814d64d0f30e3b5ff);
+                var html_83438608db059a3a73e2aabb08dcbfa5 = $(`<div id="html_83438608db059a3a73e2aabb08dcbfa5" style="width: 100.0%; height: 100.0%;"><b>鹿児島県歴史資料センター黎明館</b><br>都道府県: 鹿児島県<br>地域ブロック: 九州<br>所収史料群名: 中井弘関係文書 / 黒田清隆関係文書<br>所蔵確認点数: 1 / 3<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_7d329f0e570b71e85689e10d0b5ca094.setContent(html_83438608db059a3a73e2aabb08dcbfa5);
             
         
 
-        marker_5f60b037d2c2bfa163ecd29cc2a03434.bindPopup(popup_203cd2551d6fe60185237ceec2bab85d)
+        marker_f9da04a0fb122838b3573820b4850caa.bindPopup(popup_7d329f0e570b71e85689e10d0b5ca094)
         ;
 
         
     
     
-            marker_5f60b037d2c2bfa163ecd29cc2a03434.bindTooltip(
+            marker_f9da04a0fb122838b3573820b4850caa.bindTooltip(
                 `<div>
                      鹿児島県歴史資料センター黎明館
                  </div>`,
@@ -336,31 +447,54 @@
             );
         
     
-            var marker_567f29a5bec526f0f7d1b45bf3cc576c = L.marker(
-                [41.96878, 140.13562],
-                {
-}
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+                marker_f9da04a0fb122838b3573820b4850caa.setIcon(icon_54cfc9de992b3d35e0dc8c1f0b509f3b);
+            
+    
+            feature_group_1564f8edbd2f84a8b0c6e77f3e21de99.addTo(map_df9f1e4ea518fd319ea4e08f57467d9a);
         
     
-        var popup_70a22d879905257a07d9609829e460ac = L.popup({
-  "maxWidth": 320,
+            var feature_group_a23e93f983a4926935a8a3c9eb78223c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_948567aa0a2f9121e1b814704c051dff = L.marker(
+                [41.966, 140.133],
+                {
+}
+            ).addTo(feature_group_a23e93f983a4926935a8a3c9eb78223c);
+        
+    
+            var icon_af050499444891c0d379ba3d63794cf7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0c3f53e577ec5d2a2aaa01ad4a40fd3 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_5ea402af7c40fd0127d5ac2a30c611bd = $(`<div id="html_5ea402af7c40fd0127d5ac2a30c611bd" style="width: 100.0%; height: 100.0%;"><b>乙部町役場</b><br>都道府県: 北海道<br>史料群例: 『乙部町史』収集史料(坂本環さま旧蔵)<br>件数: 1<br><small>乙部町役場</small></div>`)[0];
-                popup_70a22d879905257a07d9609829e460ac.setContent(html_5ea402af7c40fd0127d5ac2a30c611bd);
+                var html_b3cf8515326d55d4175ef014615e20d5 = $(`<div id="html_b3cf8515326d55d4175ef014615e20d5" style="width: 100.0%; height: 100.0%;"><b>乙部町役場</b><br>都道府県: 北海道<br>地域ブロック: 北海道<br>所収史料群名: 『乙部町史』収集史料(坂本環さま旧蔵)<br>所蔵確認点数: 1128<br>調査済: 1.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_b0c3f53e577ec5d2a2aaa01ad4a40fd3.setContent(html_b3cf8515326d55d4175ef014615e20d5);
             
         
 
-        marker_567f29a5bec526f0f7d1b45bf3cc576c.bindPopup(popup_70a22d879905257a07d9609829e460ac)
+        marker_948567aa0a2f9121e1b814704c051dff.bindPopup(popup_b0c3f53e577ec5d2a2aaa01ad4a40fd3)
         ;
 
         
     
     
-            marker_567f29a5bec526f0f7d1b45bf3cc576c.bindTooltip(
+            marker_948567aa0a2f9121e1b814704c051dff.bindTooltip(
                 `<div>
                      乙部町役場
                  </div>`,
@@ -370,31 +504,45 @@
             );
         
     
-            var marker_ff45f321ba527993f8e70f2e84d6a15c = L.marker(
-                [43.05775, 141.34751],
+                marker_948567aa0a2f9121e1b814704c051dff.setIcon(icon_af050499444891c0d379ba3d63794cf7);
+            
+    
+            var marker_9d633f94ee0d8d94810700c669d6852d = L.marker(
+                [43.069605, 141.500552],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_a23e93f983a4926935a8a3c9eb78223c);
         
     
-        var popup_3800ab94c3df2afecd497fc79517994b = L.popup({
-  "maxWidth": 320,
+            var icon_dc8b72d2daca71ede554c26de2d7ac93 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28d002ffe4ecf82a561756652fd67826 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_206cc1283efecff98129d0f0c5e52fc2 = $(`<div id="html_206cc1283efecff98129d0f0c5e52fc2" style="width: 100.0%; height: 100.0%;"><b>北海道立文書館</b><br>都道府県: 北海道<br>史料群例: <br>件数: 0<br><small>北海道立文書館</small></div>`)[0];
-                popup_3800ab94c3df2afecd497fc79517994b.setContent(html_206cc1283efecff98129d0f0c5e52fc2);
+                var html_16a6123eebf1582d2a1b69d1d00a7b9b = $(`<div id="html_16a6123eebf1582d2a1b69d1d00a7b9b" style="width: 100.0%; height: 100.0%;"><b>北海道立文書館</b><br>都道府県: 北海道<br>地域ブロック: 北海道<br>調査済: 1.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_28d002ffe4ecf82a561756652fd67826.setContent(html_16a6123eebf1582d2a1b69d1d00a7b9b);
             
         
 
-        marker_ff45f321ba527993f8e70f2e84d6a15c.bindPopup(popup_3800ab94c3df2afecd497fc79517994b)
+        marker_9d633f94ee0d8d94810700c669d6852d.bindPopup(popup_28d002ffe4ecf82a561756652fd67826)
         ;
 
         
     
     
-            marker_ff45f321ba527993f8e70f2e84d6a15c.bindTooltip(
+            marker_9d633f94ee0d8d94810700c669d6852d.bindTooltip(
                 `<div>
                      北海道立文書館
                  </div>`,
@@ -404,31 +552,54 @@
             );
         
     
-            var marker_f2b13bdcf82dbc30dbc554cbab91a324 = L.marker(
-                [37.66312, 138.92537],
-                {
-}
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+                marker_9d633f94ee0d8d94810700c669d6852d.setIcon(icon_dc8b72d2daca71ede554c26de2d7ac93);
+            
+    
+            feature_group_a23e93f983a4926935a8a3c9eb78223c.addTo(map_df9f1e4ea518fd319ea4e08f57467d9a);
         
     
-        var popup_9fb3402a570cdd15e3599643ac8eea0c = L.popup({
-  "maxWidth": 320,
+            var feature_group_ecb2d5faf8ff915f1abe97aaa6c19acf = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_1facb4c06f2df8dd369cb0c8bf6d7b0a = L.marker(
+                [37.651899, 138.86915],
+                {
+}
+            ).addTo(feature_group_ecb2d5faf8ff915f1abe97aaa6c19acf);
+        
+    
+            var icon_98bb1b9b6d657d7ca81f8d0b4866d688 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a045868699987bb51ee4f42cf3aaf022 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_c971e02ef83b26b6a22b62919c1d341d = $(`<div id="html_c971e02ef83b26b6a22b62919c1d341d" style="width: 100.0%; height: 100.0%;"><b>新潟県燕市教育委員会所管・長善館史料館</b><br>都道府県: 新潟県<br>史料群例: <br>件数: 0<br><small>長善館史料館</small></div>`)[0];
-                popup_9fb3402a570cdd15e3599643ac8eea0c.setContent(html_c971e02ef83b26b6a22b62919c1d341d);
+                var html_6743463d52a824d141ef1c54141ceafa = $(`<div id="html_6743463d52a824d141ef1c54141ceafa" style="width: 100.0%; height: 100.0%;"><b>新潟県燕市教育委員会所管・長善館史料館</b><br>都道府県: 新潟県<br>地域ブロック: 北陸<br>調査済: 0.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_a045868699987bb51ee4f42cf3aaf022.setContent(html_6743463d52a824d141ef1c54141ceafa);
             
         
 
-        marker_f2b13bdcf82dbc30dbc554cbab91a324.bindPopup(popup_9fb3402a570cdd15e3599643ac8eea0c)
+        marker_1facb4c06f2df8dd369cb0c8bf6d7b0a.bindPopup(popup_a045868699987bb51ee4f42cf3aaf022)
         ;
 
         
     
     
-            marker_f2b13bdcf82dbc30dbc554cbab91a324.bindTooltip(
+            marker_1facb4c06f2df8dd369cb0c8bf6d7b0a.bindTooltip(
                 `<div>
                      新潟県燕市教育委員会所管・長善館史料館
                  </div>`,
@@ -438,31 +609,45 @@
             );
         
     
-            var marker_82e0d93394574bbaf971213a9da1eda7 = L.marker(
-                [37.9134531, 139.0405064],
+                marker_1facb4c06f2df8dd369cb0c8bf6d7b0a.setIcon(icon_98bb1b9b6d657d7ca81f8d0b4866d688);
+            
+    
+            var marker_02ddf8b834839f3a5e92a06128bbb8bb = L.marker(
+                [37.890117, 139.051289],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_ecb2d5faf8ff915f1abe97aaa6c19acf);
         
     
-        var popup_7fe8b66935a97c0d9d7225c49a2261f9 = L.popup({
-  "maxWidth": 320,
+            var icon_fb0ad2d35a5e7b62944253135b10cd06 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63814fc063d70b0a165172722ea42aae = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_e873b5dfa10854313f0264465378275b = $(`<div id="html_e873b5dfa10854313f0264465378275b" style="width: 100.0%; height: 100.0%;"><b>新潟県立文書館</b><br>都道府県: 新潟県<br>史料群例: <br>件数: 0<br><small>りゅーとぴあ 新潟市民芸術文化会館, 白山停車場女池線, 本町通一番町, 中央区, 新潟市, 新潟県, 951-8061, 日本</small></div>`)[0];
-                popup_7fe8b66935a97c0d9d7225c49a2261f9.setContent(html_e873b5dfa10854313f0264465378275b);
+                var html_b93ded0957af4e2a537a01baa1f1598b = $(`<div id="html_b93ded0957af4e2a537a01baa1f1598b" style="width: 100.0%; height: 100.0%;"><b>新潟県立文書館</b><br>新潟県新潟市中央区女池南3-1-2<br>都道府県: 新潟県<br>地域ブロック: 北陸<br>調査済: 0.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_63814fc063d70b0a165172722ea42aae.setContent(html_b93ded0957af4e2a537a01baa1f1598b);
             
         
 
-        marker_82e0d93394574bbaf971213a9da1eda7.bindPopup(popup_7fe8b66935a97c0d9d7225c49a2261f9)
+        marker_02ddf8b834839f3a5e92a06128bbb8bb.bindPopup(popup_63814fc063d70b0a165172722ea42aae)
         ;
 
         
     
     
-            marker_82e0d93394574bbaf971213a9da1eda7.bindTooltip(
+            marker_02ddf8b834839f3a5e92a06128bbb8bb.bindTooltip(
                 `<div>
                      新潟県立文書館
                  </div>`,
@@ -472,31 +657,45 @@
             );
         
     
-            var marker_c8d1e94415ed06727b09e92136d19728 = L.marker(
-                [37.4386715, 138.7677082],
+                marker_02ddf8b834839f3a5e92a06128bbb8bb.setIcon(icon_fb0ad2d35a5e7b62944253135b10cd06);
+            
+    
+            var marker_d6ad6a434561c8f1073d5d98c8833b9d = L.marker(
+                [37.439149, 138.767321],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_ecb2d5faf8ff915f1abe97aaa6c19acf);
         
     
-        var popup_0180a889a07b82873fd8b18b2eeba5d2 = L.popup({
-  "maxWidth": 320,
+            var icon_35e595eaaa57477b93da518693fd2a10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d116b3b87242e1e5aab93b80eaff0dbf = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_0113de69d21cc269ccc502ebec666112 = $(`<div id="html_0113de69d21cc269ccc502ebec666112" style="width: 100.0%; height: 100.0%;"><b>新潟県立歴史博物館</b><br>都道府県: 新潟県<br>史料群例: <br>件数: 0<br><small>新潟県立歴史博物館, 長岡バイパス, 関原南五丁目, 長岡市, 新潟県, 940-2035, 日本</small></div>`)[0];
-                popup_0180a889a07b82873fd8b18b2eeba5d2.setContent(html_0113de69d21cc269ccc502ebec666112);
+                var html_3b95e0a98e2078e983837fa168c5a6cf = $(`<div id="html_3b95e0a98e2078e983837fa168c5a6cf" style="width: 100.0%; height: 100.0%;"><b>新潟県立歴史博物館</b><br>都道府県: 新潟県<br>地域ブロック: 北陸<br>調査済: 0.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_d116b3b87242e1e5aab93b80eaff0dbf.setContent(html_3b95e0a98e2078e983837fa168c5a6cf);
             
         
 
-        marker_c8d1e94415ed06727b09e92136d19728.bindPopup(popup_0180a889a07b82873fd8b18b2eeba5d2)
+        marker_d6ad6a434561c8f1073d5d98c8833b9d.bindPopup(popup_d116b3b87242e1e5aab93b80eaff0dbf)
         ;
 
         
     
     
-            marker_c8d1e94415ed06727b09e92136d19728.bindTooltip(
+            marker_d6ad6a434561c8f1073d5d98c8833b9d.bindTooltip(
                 `<div>
                      新潟県立歴史博物館
                  </div>`,
@@ -506,31 +705,54 @@
             );
         
     
-            var marker_ab986997b92e6981fcaa4b2121c3a095 = L.marker(
-                [39.26455, 141.90064],
-                {
-}
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+                marker_d6ad6a434561c8f1073d5d98c8833b9d.setIcon(icon_35e595eaaa57477b93da518693fd2a10);
+            
+    
+            feature_group_ecb2d5faf8ff915f1abe97aaa6c19acf.addTo(map_df9f1e4ea518fd319ea4e08f57467d9a);
         
     
-        var popup_bb2f55557fe4bc37321431e186b74ea8 = L.popup({
-  "maxWidth": 320,
+            var feature_group_e170f434bd0ee5bfec5ac32a53f2fdb0 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_3950d7a3509c98d6212efb712d89a9e2 = L.marker(
+                [39.255589, 141.89413],
+                {
+}
+            ).addTo(feature_group_e170f434bd0ee5bfec5ac32a53f2fdb0);
+        
+    
+            var icon_573aa6973fc67d4eef906a58fd1c22ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ec6b67f0d791843fd79cff08b294ecc = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_502c54d141402f9ae181b6bdfd589dd9 = $(`<div id="html_502c54d141402f9ae181b6bdfd589dd9" style="width: 100.0%; height: 100.0%;"><b>釜石市立鉄の歴史館</b><br>都道府県: 岩手県<br>史料群例: 大島道太郎関係文書<br>件数: 1<br><small>釜石市立鉄の歴史館</small></div>`)[0];
-                popup_bb2f55557fe4bc37321431e186b74ea8.setContent(html_502c54d141402f9ae181b6bdfd589dd9);
+                var html_00aad4d2aa9ff99d5925bdb6a27a8b8c = $(`<div id="html_00aad4d2aa9ff99d5925bdb6a27a8b8c" style="width: 100.0%; height: 100.0%;"><b>釜石市立鉄の歴史館</b><br>〒026-0002 岩手県釜石市大平町3丁目12−7<br>都道府県: 岩手県<br>地域ブロック: 東北<br>所収史料群名: 大島道太郎関係文書<br>所蔵確認点数: 4<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_1ec6b67f0d791843fd79cff08b294ecc.setContent(html_00aad4d2aa9ff99d5925bdb6a27a8b8c);
             
         
 
-        marker_ab986997b92e6981fcaa4b2121c3a095.bindPopup(popup_bb2f55557fe4bc37321431e186b74ea8)
+        marker_3950d7a3509c98d6212efb712d89a9e2.bindPopup(popup_1ec6b67f0d791843fd79cff08b294ecc)
         ;
 
         
     
     
-            marker_ab986997b92e6981fcaa4b2121c3a095.bindTooltip(
+            marker_3950d7a3509c98d6212efb712d89a9e2.bindTooltip(
                 `<div>
                      釜石市立鉄の歴史館
                  </div>`,
@@ -540,31 +762,54 @@
             );
         
     
-            var marker_96e63d9d47bb7635491afad2a118ffd0 = L.marker(
-                [35.45007, 136.76047],
-                {
-}
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+                marker_3950d7a3509c98d6212efb712d89a9e2.setIcon(icon_573aa6973fc67d4eef906a58fd1c22ad);
+            
+    
+            feature_group_e170f434bd0ee5bfec5ac32a53f2fdb0.addTo(map_df9f1e4ea518fd319ea4e08f57467d9a);
         
     
-        var popup_966d08367b07997586593aad922fe93e = L.popup({
-  "maxWidth": 320,
+            var feature_group_efd7f8db32126f47c8eac0abeb6afaae = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_21194418a9cf90608d3461d652e14951 = L.marker(
+                [35.430689, 136.774103],
+                {
+}
+            ).addTo(feature_group_efd7f8db32126f47c8eac0abeb6afaae);
+        
+    
+            var icon_3428f30023aa4f6d23ad4afda655d562 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d93683ad6a561adc34a35134d786d67 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_2ae46083456404cefdd71cf61fd2031c = $(`<div id="html_2ae46083456404cefdd71cf61fd2031c" style="width: 100.0%; height: 100.0%;"><b>岐阜県歴史資料館</b><br>都道府県: 岐阜県<br>史料群例: <br>件数: 0<br><small>岐阜県歴史資料館</small></div>`)[0];
-                popup_966d08367b07997586593aad922fe93e.setContent(html_2ae46083456404cefdd71cf61fd2031c);
+                var html_7c61f57eb1a959cac28039b26837dea5 = $(`<div id="html_7c61f57eb1a959cac28039b26837dea5" style="width: 100.0%; height: 100.0%;"><b>岐阜県歴史資料館</b><br>都道府県: 岐阜県<br>地域ブロック: 東海<br>調査済: 0.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_8d93683ad6a561adc34a35134d786d67.setContent(html_7c61f57eb1a959cac28039b26837dea5);
             
         
 
-        marker_96e63d9d47bb7635491afad2a118ffd0.bindPopup(popup_966d08367b07997586593aad922fe93e)
+        marker_21194418a9cf90608d3461d652e14951.bindPopup(popup_8d93683ad6a561adc34a35134d786d67)
         ;
 
         
     
     
-            marker_96e63d9d47bb7635491afad2a118ffd0.bindTooltip(
+            marker_21194418a9cf90608d3461d652e14951.bindTooltip(
                 `<div>
                      岐阜県歴史資料館
                  </div>`,
@@ -574,31 +819,45 @@
             );
         
     
-            var marker_8ddbfd4e6212517d835f41812add3641 = L.marker(
-                [35.214587, 137.507849],
+                marker_21194418a9cf90608d3461d652e14951.setIcon(icon_3428f30023aa4f6d23ad4afda655d562);
+            
+    
+            var marker_e07ef14cc00b6454f8ad8da9417ded30 = L.marker(
+                [35.214444, 137.508056],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_efd7f8db32126f47c8eac0abeb6afaae);
         
     
-        var popup_b5cbb85d3961f04fb2a41e3deab671ce = L.popup({
-  "maxWidth": 320,
+            var icon_a6a3c64aec85122d1c1d225a4b380401 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_790498dd521741e3a8d68e800f123732 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_ce490d91171e71b53a4d39c52b6a508e = $(`<div id="html_ce490d91171e71b53a4d39c52b6a508e" style="width: 100.0%; height: 100.0%;"><b>古橋懐古館</b><br>都道府県: 愛知県<br>史料群例: 古橋家文書<br>件数: 0<br><small>古橋懐古館, 稲武線, 桑原町, 豊田市, 愛知県, 441-2513, 日本</small></div>`)[0];
-                popup_b5cbb85d3961f04fb2a41e3deab671ce.setContent(html_ce490d91171e71b53a4d39c52b6a508e);
+                var html_50127c07539533ff5233a29db5c9f13b = $(`<div id="html_50127c07539533ff5233a29db5c9f13b" style="width: 100.0%; height: 100.0%;"><b>古橋懐古館</b><br>都道府県: 愛知県<br>地域ブロック: 東海<br>所収史料群名: 古橋家文書<br>調査済: 1.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_790498dd521741e3a8d68e800f123732.setContent(html_50127c07539533ff5233a29db5c9f13b);
             
         
 
-        marker_8ddbfd4e6212517d835f41812add3641.bindPopup(popup_b5cbb85d3961f04fb2a41e3deab671ce)
+        marker_e07ef14cc00b6454f8ad8da9417ded30.bindPopup(popup_790498dd521741e3a8d68e800f123732)
         ;
 
         
     
     
-            marker_8ddbfd4e6212517d835f41812add3641.bindTooltip(
+            marker_e07ef14cc00b6454f8ad8da9417ded30.bindTooltip(
                 `<div>
                      古橋懐古館
                  </div>`,
@@ -608,31 +867,45 @@
             );
         
     
-            var marker_594dfee5ef79279b405ec36654e65e0e = L.marker(
-                [35.0051861, 137.1767339],
+                marker_e07ef14cc00b6454f8ad8da9417ded30.setIcon(icon_a6a3c64aec85122d1c1d225a4b380401);
+            
+    
+            var marker_3e417bb3f2a9d417fc10bc8a89a3b1db = L.marker(
+                [35.005343, 137.17673],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_efd7f8db32126f47c8eac0abeb6afaae);
         
     
-        var popup_288ffcba24c9b583d3da3bbe5805f002 = L.popup({
-  "maxWidth": 320,
+            var icon_2067af58625816be76a0e19e245faa10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53563bd922014aea15d55495850922b0 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_7deea68a7b9c94023ffeb0da368c268e = $(`<div id="html_7deea68a7b9c94023ffeb0da368c268e" style="width: 100.0%; height: 100.0%;"><b>岩津天満宮</b><br>都道府県: 愛知県<br>史料群例: 服部長七宛品川弥二郎書簡<br>件数: 1<br><small>岩津天満宮, 東名高速道路, 岩津町, 岡崎市, 愛知県, 444-2143, 日本</small></div>`)[0];
-                popup_288ffcba24c9b583d3da3bbe5805f002.setContent(html_7deea68a7b9c94023ffeb0da368c268e);
+                var html_617ff1c2ee4aaf6951cf833f8fab3709 = $(`<div id="html_617ff1c2ee4aaf6951cf833f8fab3709" style="width: 100.0%; height: 100.0%;"><b>岩津天満宮</b><br>都道府県: 愛知県<br>地域ブロック: 東海<br>所収史料群名: 服部長七宛品川弥二郎書簡<br>所蔵確認点数: 3<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_53563bd922014aea15d55495850922b0.setContent(html_617ff1c2ee4aaf6951cf833f8fab3709);
             
         
 
-        marker_594dfee5ef79279b405ec36654e65e0e.bindPopup(popup_288ffcba24c9b583d3da3bbe5805f002)
+        marker_3e417bb3f2a9d417fc10bc8a89a3b1db.bindPopup(popup_53563bd922014aea15d55495850922b0)
         ;
 
         
     
     
-            marker_594dfee5ef79279b405ec36654e65e0e.bindTooltip(
+            marker_3e417bb3f2a9d417fc10bc8a89a3b1db.bindTooltip(
                 `<div>
                      岩津天満宮
                  </div>`,
@@ -642,31 +915,45 @@
             );
         
     
-            var marker_681f23b046b0a4e2ab323ac8bea92501 = L.marker(
-                [34.86505, 136.984523],
+                marker_3e417bb3f2a9d417fc10bc8a89a3b1db.setIcon(icon_2067af58625816be76a0e19e245faa10);
+            
+    
+            var marker_6c94a49d4a949b224353eddec5cc7d1f = L.marker(
+                [34.884797, 136.993365],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_efd7f8db32126f47c8eac0abeb6afaae);
         
     
-        var popup_00386b22ea4789c04053bd4ed686ff58 = L.popup({
-  "maxWidth": 320,
+            var icon_571a86e35a4301a04b639e757ecc4216 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04dccca3c1ceada86842cb56d2fbd6c4 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_31b9db75081f12458e2bb45aeb8f3a70 = $(`<div id="html_31b9db75081f12458e2bb45aeb8f3a70" style="width: 100.0%; height: 100.0%;"><b>碧南市寄託・岡本小治郎家所蔵</b><br>都道府県: 愛知県<br>史料群例: 服部長七関連岡本小治郎家資料<br>件数: 1<br><small>碧南市, 愛知県, 447-0027, 日本</small></div>`)[0];
-                popup_00386b22ea4789c04053bd4ed686ff58.setContent(html_31b9db75081f12458e2bb45aeb8f3a70);
+                var html_b189971a93dbb20e7af52b1310ec3ad1 = $(`<div id="html_b189971a93dbb20e7af52b1310ec3ad1" style="width: 100.0%; height: 100.0%;"><b>碧南市寄託・岡本小治郎家所蔵</b><br>愛知県碧南市<br>都道府県: 愛知県<br>地域ブロック: 東海<br>所収史料群名: 服部長七関連岡本小治郎家資料<br>所蔵確認点数: 約6000<br>調査済: 1.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_04dccca3c1ceada86842cb56d2fbd6c4.setContent(html_b189971a93dbb20e7af52b1310ec3ad1);
             
         
 
-        marker_681f23b046b0a4e2ab323ac8bea92501.bindPopup(popup_00386b22ea4789c04053bd4ed686ff58)
+        marker_6c94a49d4a949b224353eddec5cc7d1f.bindPopup(popup_04dccca3c1ceada86842cb56d2fbd6c4)
         ;
 
         
     
     
-            marker_681f23b046b0a4e2ab323ac8bea92501.bindTooltip(
+            marker_6c94a49d4a949b224353eddec5cc7d1f.bindTooltip(
                 `<div>
                      碧南市寄託・岡本小治郎家所蔵
                  </div>`,
@@ -676,31 +963,45 @@
             );
         
     
-            var marker_5cc4309ae07565aed4a2e319fc454254 = L.marker(
-                [34.86884, 137.06145],
+                marker_6c94a49d4a949b224353eddec5cc7d1f.setIcon(icon_571a86e35a4301a04b639e757ecc4216);
+            
+    
+            var marker_0584701bf3ff1465faeb2450b421d6c1 = L.marker(
+                [34.874401, 137.053817],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_efd7f8db32126f47c8eac0abeb6afaae);
         
     
-        var popup_cd936f45823635502d2fbcd46901633e = L.popup({
-  "maxWidth": 320,
+            var icon_351d45e4f85209be130a053b54852ed3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6346a45cfa1ae8f578cdd6c44f16a037 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_c2b4abe4633388aa7779103238d8a43f = $(`<div id="html_c2b4abe4633388aa7779103238d8a43f" style="width: 100.0%; height: 100.0%;"><b>西尾市立岩瀬文庫</b><br>都道府県: 愛知県<br>史料群例: 太田伊八家文書 / 田中長嶺関係文書<br>件数: 0<br><small>西尾市立岩瀬文庫</small></div>`)[0];
-                popup_cd936f45823635502d2fbcd46901633e.setContent(html_c2b4abe4633388aa7779103238d8a43f);
+                var html_e498de627def214656ee9c4a13ea845f = $(`<div id="html_e498de627def214656ee9c4a13ea845f" style="width: 100.0%; height: 100.0%;"><b>西尾市立岩瀬文庫</b><br>都道府県: 愛知県<br>地域ブロック: 東海<br>所収史料群名: 太田伊八家文書 / 田中長嶺関係文書<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_6346a45cfa1ae8f578cdd6c44f16a037.setContent(html_e498de627def214656ee9c4a13ea845f);
             
         
 
-        marker_5cc4309ae07565aed4a2e319fc454254.bindPopup(popup_cd936f45823635502d2fbcd46901633e)
+        marker_0584701bf3ff1465faeb2450b421d6c1.bindPopup(popup_6346a45cfa1ae8f578cdd6c44f16a037)
         ;
 
         
     
     
-            marker_5cc4309ae07565aed4a2e319fc454254.bindTooltip(
+            marker_0584701bf3ff1465faeb2450b421d6c1.bindTooltip(
                 `<div>
                      西尾市立岩瀬文庫
                  </div>`,
@@ -710,31 +1011,45 @@
             );
         
     
-            var marker_55eb3a0ce05c08a83e815356c6eb81b2 = L.marker(
-                [35.08378, 137.15616],
+                marker_0584701bf3ff1465faeb2450b421d6c1.setIcon(icon_351d45e4f85209be130a053b54852ed3);
+            
+    
+            var marker_91def28efcae52b2749422547b43abfa = L.marker(
+                [35.081586, 137.151712],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_efd7f8db32126f47c8eac0abeb6afaae);
         
     
-        var popup_feae2799ff82f128e9143f7765515167 = L.popup({
-  "maxWidth": 320,
+            var icon_b0a83667d98bdc55db94ac46e131e909 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b56280fe5a5505d4e63bfa8f9d20d510 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_c5e0efada44a1684025ed58b3387fac9 = $(`<div id="html_c5e0efada44a1684025ed58b3387fac9" style="width: 100.0%; height: 100.0%;"><b>豊田市市史編さん室→豊田市博物館</b><br>都道府県: 愛知県<br>史料群例: 足助地区 小出家文書 / 上郷地区桝塚東町上野鋭治家所蔵史料<br>件数: 0<br><small>豊田市博物館</small></div>`)[0];
-                popup_feae2799ff82f128e9143f7765515167.setContent(html_c5e0efada44a1684025ed58b3387fac9);
+                var html_029f4ab17f640b92ecd5bd0603b59c0a = $(`<div id="html_029f4ab17f640b92ecd5bd0603b59c0a" style="width: 100.0%; height: 100.0%;"><b>豊田市市史編さん室→豊田市博物館</b><br>〒471-0034 愛知県豊田市小坂本町5丁目80 / 〒471-0034 愛知県豊田市小坂本町5丁目80<br>都道府県: 愛知県<br>地域ブロック: 東海<br>所収史料群名: 足助地区 小出家文書 / 上郷地区桝塚東町上野鋭治家所蔵史料<br>調査済: 1.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_b56280fe5a5505d4e63bfa8f9d20d510.setContent(html_029f4ab17f640b92ecd5bd0603b59c0a);
             
         
 
-        marker_55eb3a0ce05c08a83e815356c6eb81b2.bindPopup(popup_feae2799ff82f128e9143f7765515167)
+        marker_91def28efcae52b2749422547b43abfa.bindPopup(popup_b56280fe5a5505d4e63bfa8f9d20d510)
         ;
 
         
     
     
-            marker_55eb3a0ce05c08a83e815356c6eb81b2.bindTooltip(
+            marker_91def28efcae52b2749422547b43abfa.bindTooltip(
                 `<div>
                      豊田市市史編さん室→豊田市博物館
                  </div>`,
@@ -744,31 +1059,54 @@
             );
         
     
-            var marker_026f178424f7d2fbb8a5f64c2fc5f0a3 = L.marker(
-                [35.01123, 135.78241],
-                {
-}
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+                marker_91def28efcae52b2749422547b43abfa.setIcon(icon_b0a83667d98bdc55db94ac46e131e909);
+            
+    
+            feature_group_efd7f8db32126f47c8eac0abeb6afaae.addTo(map_df9f1e4ea518fd319ea4e08f57467d9a);
         
     
-        var popup_8464ef07f4c3fe6dd98eace746b9b096 = L.popup({
-  "maxWidth": 320,
+            var feature_group_fe235934dce62f9280c338a880a709a8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_07259c5a05e79825e63b6632ed8a3c73 = L.marker(
+                [35.009868, 135.781338],
+                {
+}
+            ).addTo(feature_group_fe235934dce62f9280c338a880a709a8);
+        
+    
+            var icon_c666965f0fd0345294faff76334d37bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c744268f63dc0f40ecf7e86f5f2f2340 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_e0ad6e10c04cf1ab6bce7b456ed7035b = $(`<div id="html_e0ad6e10c04cf1ab6bce7b456ed7035b" style="width: 100.0%; height: 100.0%;"><b>並河七宝記念館所蔵史料</b><br>都道府県: 京都府<br>史料群例: <br>件数: 1<br><small>並河靖之七宝記念館</small></div>`)[0];
-                popup_8464ef07f4c3fe6dd98eace746b9b096.setContent(html_e0ad6e10c04cf1ab6bce7b456ed7035b);
+                var html_89b0c4cde2e4df5c6cd7c4c568238019 = $(`<div id="html_89b0c4cde2e4df5c6cd7c4c568238019" style="width: 100.0%; height: 100.0%;"><b>並河七宝記念館所蔵史料</b><br>〒605-0038 京都府京都市東山区三条通北裏白川筋東入る堀池町388<br>都道府県: 京都府<br>地域ブロック: 近畿<br>所蔵確認点数: 1<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_c744268f63dc0f40ecf7e86f5f2f2340.setContent(html_89b0c4cde2e4df5c6cd7c4c568238019);
             
         
 
-        marker_026f178424f7d2fbb8a5f64c2fc5f0a3.bindPopup(popup_8464ef07f4c3fe6dd98eace746b9b096)
+        marker_07259c5a05e79825e63b6632ed8a3c73.bindPopup(popup_c744268f63dc0f40ecf7e86f5f2f2340)
         ;
 
         
     
     
-            marker_026f178424f7d2fbb8a5f64c2fc5f0a3.bindTooltip(
+            marker_07259c5a05e79825e63b6632ed8a3c73.bindTooltip(
                 `<div>
                      並河七宝記念館所蔵史料
                  </div>`,
@@ -778,31 +1116,45 @@
             );
         
     
-            var marker_e612d4898d523374b10a962b84f7d805 = L.marker(
-                [34.98757, 135.77263],
+                marker_07259c5a05e79825e63b6632ed8a3c73.setIcon(icon_c666965f0fd0345294faff76334d37bf);
+            
+    
+            var marker_907068474807fd48edfe7b64fe660bb0 = L.marker(
+                [34.990581, 135.772297],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_fe235934dce62f9280c338a880a709a8);
         
     
-        var popup_255c89bd6666e7dc33cd15c5d55ca8a9 = L.popup({
-  "maxWidth": 320,
+            var icon_596a044ebac8a63934b7f93e2ee92c0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40c09f11ecffa6f6388b1eacfe7aa583 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_bbcbde8594f59ccc60a9b953c0442800 = $(`<div id="html_bbcbde8594f59ccc60a9b953c0442800" style="width: 100.0%; height: 100.0%;"><b>京都国立博物館</b><br>都道府県: 京都府<br>史料群例: 井口家文書<br>件数: 1<br><small>京都国立博物館</small></div>`)[0];
-                popup_255c89bd6666e7dc33cd15c5d55ca8a9.setContent(html_bbcbde8594f59ccc60a9b953c0442800);
+                var html_fd3c62d198587886c1e82981474d1483 = $(`<div id="html_fd3c62d198587886c1e82981474d1483" style="width: 100.0%; height: 100.0%;"><b>京都国立博物館</b><br>都道府県: 京都府<br>地域ブロック: 近畿<br>所収史料群名: 井口家文書<br>所蔵確認点数: 3<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_40c09f11ecffa6f6388b1eacfe7aa583.setContent(html_fd3c62d198587886c1e82981474d1483);
             
         
 
-        marker_e612d4898d523374b10a962b84f7d805.bindPopup(popup_255c89bd6666e7dc33cd15c5d55ca8a9)
+        marker_907068474807fd48edfe7b64fe660bb0.bindPopup(popup_40c09f11ecffa6f6388b1eacfe7aa583)
         ;
 
         
     
     
-            marker_e612d4898d523374b10a962b84f7d805.bindTooltip(
+            marker_907068474807fd48edfe7b64fe660bb0.bindTooltip(
                 `<div>
                      京都国立博物館
                  </div>`,
@@ -812,31 +1164,45 @@
             );
         
     
-            var marker_a22e59c28a77ab073959df2639c7e08c = L.marker(
-                [35.02634, 135.78081],
+                marker_907068474807fd48edfe7b64fe660bb0.setIcon(icon_596a044ebac8a63934b7f93e2ee92c0c);
+            
+    
+            var marker_579ab058214780253d5ea990f3e067e2 = L.marker(
+                [35.026485, 135.779585],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_fe235934dce62f9280c338a880a709a8);
         
     
-        var popup_135ecf3527b586b4b14ce343713f92b1 = L.popup({
-  "maxWidth": 320,
+            var icon_5104de6cdb8410b1c2cc52c1505652f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_714815ebe5b4db525f6550e074521360 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_6125bdbeb84c76e88603ede42474fce8 = $(`<div id="html_6125bdbeb84c76e88603ede42474fce8" style="width: 100.0%; height: 100.0%;"><b>京都大学附属図書館</b><br>都道府県: 京都府<br>史料群例: 維新特別資料文庫<br>件数: 1<br><small>京都大学附属図書館</small></div>`)[0];
-                popup_135ecf3527b586b4b14ce343713f92b1.setContent(html_6125bdbeb84c76e88603ede42474fce8);
+                var html_dfb0a70f977167e14831351d959cb88e = $(`<div id="html_dfb0a70f977167e14831351d959cb88e" style="width: 100.0%; height: 100.0%;"><b>京都大学附属図書館</b><br>都道府県: 京都府<br>地域ブロック: 近畿<br>所収史料群名: 維新特別資料文庫<br>所蔵確認点数: 1<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_714815ebe5b4db525f6550e074521360.setContent(html_dfb0a70f977167e14831351d959cb88e);
             
         
 
-        marker_a22e59c28a77ab073959df2639c7e08c.bindPopup(popup_135ecf3527b586b4b14ce343713f92b1)
+        marker_579ab058214780253d5ea990f3e067e2.bindPopup(popup_714815ebe5b4db525f6550e074521360)
         ;
 
         
     
     
-            marker_a22e59c28a77ab073959df2639c7e08c.bindTooltip(
+            marker_579ab058214780253d5ea990f3e067e2.bindTooltip(
                 `<div>
                      京都大学附属図書館
                  </div>`,
@@ -846,31 +1212,45 @@
             );
         
     
-            var marker_dc270bcd8eca8b8653a080bb556f9098 = L.marker(
-                [35.07153, 135.77361],
+                marker_579ab058214780253d5ea990f3e067e2.setIcon(icon_5104de6cdb8410b1c2cc52c1505652f6);
+            
+    
+            var marker_292e3912c88ca7762f5f89eb01114959 = L.marker(
+                [35.048536, 135.766814],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_fe235934dce62f9280c338a880a709a8);
         
     
-        var popup_37317fda9b62845e9bd201b0a26f7670 = L.popup({
-  "maxWidth": 320,
+            var icon_a388de8f7abf1a45f67e805335d8a4d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_acc12283fff8d245994c08bce78231c4 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_edddcb755559b12fea4d0647e188f9b7 = $(`<div id="html_edddcb755559b12fea4d0647e188f9b7" style="width: 100.0%; height: 100.0%;"><b>京都府立京都学・歴彩館</b><br>都道府県: 京都府<br>史料群例: 革島家文書<br>件数: 1<br><small>京都府立京都学・歴彩館</small></div>`)[0];
-                popup_37317fda9b62845e9bd201b0a26f7670.setContent(html_edddcb755559b12fea4d0647e188f9b7);
+                var html_889b3736bbbdb229d93cb20ff37fcfca = $(`<div id="html_889b3736bbbdb229d93cb20ff37fcfca" style="width: 100.0%; height: 100.0%;"><b>京都府立京都学・歴彩館</b><br>〒601-1123 京都府京都市左京区 静市市原町265 株式会社川島織物セルコン<br>都道府県: 京都府<br>地域ブロック: 近畿<br>所収史料群名: 革島家文書<br>所蔵確認点数: 13<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_acc12283fff8d245994c08bce78231c4.setContent(html_889b3736bbbdb229d93cb20ff37fcfca);
             
         
 
-        marker_dc270bcd8eca8b8653a080bb556f9098.bindPopup(popup_37317fda9b62845e9bd201b0a26f7670)
+        marker_292e3912c88ca7762f5f89eb01114959.bindPopup(popup_acc12283fff8d245994c08bce78231c4)
         ;
 
         
     
     
-            marker_dc270bcd8eca8b8653a080bb556f9098.bindTooltip(
+            marker_292e3912c88ca7762f5f89eb01114959.bindTooltip(
                 `<div>
                      京都府立京都学・歴彩館
                  </div>`,
@@ -880,31 +1260,45 @@
             );
         
     
-            var marker_add2c2a93a9d5d2e3175b318050a470c = L.marker(
-                [35.05772, 135.77178],
+                marker_292e3912c88ca7762f5f89eb01114959.setIcon(icon_a388de8f7abf1a45f67e805335d8a4d4);
+            
+    
+            var marker_4784c2138f204558cdea5546e51791a4 = L.marker(
+                [35.047168, 135.766863],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_fe235934dce62f9280c338a880a709a8);
         
     
-        var popup_dd00e17ec3d1311cec7641c90af7a549 = L.popup({
-  "maxWidth": 320,
+            var icon_411ca1922ef46316e531427a052b8c73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af8024da4514e7b5f1e6fa70cfc990dd = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_0d68e38be1b92cecb6452064db27bb09 = $(`<div id="html_0d68e38be1b92cecb6452064db27bb09" style="width: 100.0%; height: 100.0%;"><b>京都府立大学文学部歴史学科池田研究室</b><br>都道府県: 京都府<br>史料群例: 品川弥二郎書簡(1)光村弥兵衛宛 / 『品川弥二郎伝』稿本<br>件数: 2<br><small>京都府立大学</small></div>`)[0];
-                popup_dd00e17ec3d1311cec7641c90af7a549.setContent(html_0d68e38be1b92cecb6452064db27bb09);
+                var html_c25e281256794b5148f1155a3a19d8d0 = $(`<div id="html_c25e281256794b5148f1155a3a19d8d0" style="width: 100.0%; height: 100.0%;"><b>京都府立大学文学部歴史学科池田研究室</b><br>〒606-8522 京都市左京区下鴨半木町1-5 / 〒606-8522 京都市左京区下鴨半木町1-5<br>都道府県: 京都府<br>地域ブロック: 近畿<br>所収史料群名: 品川弥二郎書簡(1)光村弥兵衛宛 / 『品川弥二郎伝』稿本<br>所蔵確認点数: 1 / 4<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_af8024da4514e7b5f1e6fa70cfc990dd.setContent(html_c25e281256794b5148f1155a3a19d8d0);
             
         
 
-        marker_add2c2a93a9d5d2e3175b318050a470c.bindPopup(popup_dd00e17ec3d1311cec7641c90af7a549)
+        marker_4784c2138f204558cdea5546e51791a4.bindPopup(popup_af8024da4514e7b5f1e6fa70cfc990dd)
         ;
 
         
     
     
-            marker_add2c2a93a9d5d2e3175b318050a470c.bindTooltip(
+            marker_4784c2138f204558cdea5546e51791a4.bindTooltip(
                 `<div>
                      京都府立大学文学部歴史学科池田研究室
                  </div>`,
@@ -914,31 +1308,45 @@
             );
         
     
-            var marker_ba63ac8c9fe0642b795652f93782d276 = L.marker(
-                [35.0094898, 135.7623128],
+                marker_4784c2138f204558cdea5546e51791a4.setIcon(icon_411ca1922ef46316e531427a052b8c73);
+            
+    
+            var marker_36a1b4986e2bb4d0949808995256b913 = L.marker(
+                [35.008741, 135.762186],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_fe235934dce62f9280c338a880a709a8);
         
     
-        var popup_52b69bb26e003ab676e90a964c3a9314 = L.popup({
-  "maxWidth": 320,
+            var icon_3ff79dd174c477bddf5783afb67e3c3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_463e950a207bcf8751883f357c17da44 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_e23ca0852f53a9e1f7576c64a8aa3724 = $(`<div id="html_e23ca0852f53a9e1f7576c64a8aa3724" style="width: 100.0%; height: 100.0%;"><b>京都文化博物館</b><br>都道府県: 京都府<br>史料群例: 七生之巻<br>件数: 1<br><small>京都府京都文化博物館, 高倉通, 東片町, 中京区, 京都市, 京都府, 604-8111, 日本</small></div>`)[0];
-                popup_52b69bb26e003ab676e90a964c3a9314.setContent(html_e23ca0852f53a9e1f7576c64a8aa3724);
+                var html_bd074505070671ba55cce9f409e2f942 = $(`<div id="html_bd074505070671ba55cce9f409e2f942" style="width: 100.0%; height: 100.0%;"><b>京都文化博物館</b><br>都道府県: 京都府<br>地域ブロック: 近畿<br>所収史料群名: 七生之巻<br>所蔵確認点数: 1<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_463e950a207bcf8751883f357c17da44.setContent(html_bd074505070671ba55cce9f409e2f942);
             
         
 
-        marker_ba63ac8c9fe0642b795652f93782d276.bindPopup(popup_52b69bb26e003ab676e90a964c3a9314)
+        marker_36a1b4986e2bb4d0949808995256b913.bindPopup(popup_463e950a207bcf8751883f357c17da44)
         ;
 
         
     
     
-            marker_ba63ac8c9fe0642b795652f93782d276.bindTooltip(
+            marker_36a1b4986e2bb4d0949808995256b913.bindTooltip(
                 `<div>
                      京都文化博物館
                  </div>`,
@@ -948,31 +1356,45 @@
             );
         
     
-            var marker_d6d8e5b3c931ada1888209d5b5257760 = L.marker(
-                [35.01576, 135.78634],
+                marker_36a1b4986e2bb4d0949808995256b913.setIcon(icon_3ff79dd174c477bddf5783afb67e3c3b);
+            
+    
+            var marker_82f6741562f6e1e96b95017d517f355e = L.marker(
+                [35.022, 135.794],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_fe235934dce62f9280c338a880a709a8);
         
     
-        var popup_e0fc37f347037ea2b8bc76a84d99c107 = L.popup({
-  "maxWidth": 320,
+            var icon_978fb314a70dac7049e8b362a7e7e553 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_453ba2984e142cbb36a6d5181f5b6c99 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_7b1dc0af6ef7dcca7446e85fab0a2e5c = $(`<div id="html_7b1dc0af6ef7dcca7446e85fab0a2e5c" style="width: 100.0%; height: 100.0%;"><b>住友史料館</b><br>都道府県: 京都府<br>史料群例: <br>件数: 0<br><small>泉屋博古館</small></div>`)[0];
-                popup_e0fc37f347037ea2b8bc76a84d99c107.setContent(html_7b1dc0af6ef7dcca7446e85fab0a2e5c);
+                var html_bf77ec90f0814a62011aa0ac89fa9d07 = $(`<div id="html_bf77ec90f0814a62011aa0ac89fa9d07" style="width: 100.0%; height: 100.0%;"><b>住友史料館</b><br>〒606-8431 京都府京都市左京区鹿ケ谷下宮ノ前町1−2<br>都道府県: 京都府<br>地域ブロック: 近畿<br>調査済: 0.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_453ba2984e142cbb36a6d5181f5b6c99.setContent(html_bf77ec90f0814a62011aa0ac89fa9d07);
             
         
 
-        marker_d6d8e5b3c931ada1888209d5b5257760.bindPopup(popup_e0fc37f347037ea2b8bc76a84d99c107)
+        marker_82f6741562f6e1e96b95017d517f355e.bindPopup(popup_453ba2984e142cbb36a6d5181f5b6c99)
         ;
 
         
     
     
-            marker_d6d8e5b3c931ada1888209d5b5257760.bindTooltip(
+            marker_82f6741562f6e1e96b95017d517f355e.bindTooltip(
                 `<div>
                      住友史料館
                  </div>`,
@@ -982,31 +1404,45 @@
             );
         
     
-            var marker_c5e92c7c7da193637f333b0591608929 = L.marker(
-                [35.0046075, 135.7586358],
+                marker_82f6741562f6e1e96b95017d517f355e.setIcon(icon_978fb314a70dac7049e8b362a7e7e553);
+            
+    
+            var marker_b60feeeb6f89d296cbd0e83d46ce17c7 = L.marker(
+                [35.008, 135.758],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_fe235934dce62f9280c338a880a709a8);
         
     
-        var popup_bc9fccfbffd36b6a9178a6119719ede7 = L.popup({
-  "maxWidth": 320,
+            var icon_6e65f9926769b971c65d789041f14e07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6401d564811283ca540c39a32886fbf = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_7d0220482e4c8900eeab949eaf325628 = $(`<div id="html_7d0220482e4c8900eeab949eaf325628" style="width: 100.0%; height: 100.0%;"><b>千總文化研究所</b><br>都道府県: 京都府<br>史料群例: <br>件数: 0<br><small>酒井公認会計士·税理士事務所, 錦小路通, 中筋町, 吉野町, 中京区, 京都市, 京都府, 604-8254, 日本</small></div>`)[0];
-                popup_bc9fccfbffd36b6a9178a6119719ede7.setContent(html_7d0220482e4c8900eeab949eaf325628);
+                var html_92ba786f529939f982a562b866e5d163 = $(`<div id="html_92ba786f529939f982a562b866e5d163" style="width: 100.0%; height: 100.0%;"><b>千總文化研究所</b><br>都道府県: 京都府<br>地域ブロック: 近畿<br>調査済: 0.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_e6401d564811283ca540c39a32886fbf.setContent(html_92ba786f529939f982a562b866e5d163);
             
         
 
-        marker_c5e92c7c7da193637f333b0591608929.bindPopup(popup_bc9fccfbffd36b6a9178a6119719ede7)
+        marker_b60feeeb6f89d296cbd0e83d46ce17c7.bindPopup(popup_e6401d564811283ca540c39a32886fbf)
         ;
 
         
     
     
-            marker_c5e92c7c7da193637f333b0591608929.bindTooltip(
+            marker_b60feeeb6f89d296cbd0e83d46ce17c7.bindTooltip(
                 `<div>
                      千總文化研究所
                  </div>`,
@@ -1016,31 +1452,45 @@
             );
         
     
-            var marker_552916b4826908ac97e8e50624a45441 = L.marker(
-                [35.0084812, 135.7472607],
+                marker_b60feeeb6f89d296cbd0e83d46ce17c7.setIcon(icon_6e65f9926769b971c65d789041f14e07);
+            
+    
+            var marker_4d83e0559277a707ea09997da1b001ec = L.marker(
+                [35.534, 135.21],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_fe235934dce62f9280c338a880a709a8);
         
     
-        var popup_96666734a8121f76078a7d2ab9a12d76 = L.popup({
-  "maxWidth": 320,
+            var icon_ba19c999258f272fcd6d732ac2686f4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71aaa94176bdf9c4519be80b396181d2 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_0a3cf014bdb10da19ba5d32fd018c887 = $(`<div id="html_0a3cf014bdb10da19ba5d32fd018c887" style="width: 100.0%; height: 100.0%;"><b>宮津市立前尾記念文庫→宮津市歴史資料館</b><br>都道府県: 京都府<br>史料群例: 元勲・近代諸家書簡<br>件数: 0<br><small>京都三条会商店街, 橋西町, 中京区, 京都市, 京都府, 604-8374, 日本</small></div>`)[0];
-                popup_96666734a8121f76078a7d2ab9a12d76.setContent(html_0a3cf014bdb10da19ba5d32fd018c887);
+                var html_cabc6cadde1c9471ed7da725fd605ff2 = $(`<div id="html_cabc6cadde1c9471ed7da725fd605ff2" style="width: 100.0%; height: 100.0%;"><b>宮津市立前尾記念文庫→宮津市歴史資料館</b><br>〒626-0041 京都府宮津市鶴賀2174−1<br>都道府県: 京都府<br>地域ブロック: 近畿<br>所収史料群名: 元勲・近代諸家書簡<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_71aaa94176bdf9c4519be80b396181d2.setContent(html_cabc6cadde1c9471ed7da725fd605ff2);
             
         
 
-        marker_552916b4826908ac97e8e50624a45441.bindPopup(popup_96666734a8121f76078a7d2ab9a12d76)
+        marker_4d83e0559277a707ea09997da1b001ec.bindPopup(popup_71aaa94176bdf9c4519be80b396181d2)
         ;
 
         
     
     
-            marker_552916b4826908ac97e8e50624a45441.bindTooltip(
+            marker_4d83e0559277a707ea09997da1b001ec.bindTooltip(
                 `<div>
                      宮津市立前尾記念文庫→宮津市歴史資料館
                  </div>`,
@@ -1050,31 +1500,45 @@
             );
         
     
-            var marker_78223ac83b430e859cd5b05d7730edc2 = L.marker(
-                [35.09018, 135.78431],
+                marker_4d83e0559277a707ea09997da1b001ec.setIcon(icon_ba19c999258f272fcd6d732ac2686f4f);
+            
+    
+            var marker_dc3369dea439b3dd936fc0bb262e880c = L.marker(
+                [35.105, 135.76],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_fe235934dce62f9280c338a880a709a8);
         
     
-        var popup_7c6484a38a68e68e8ef11967f8adacb5 = L.popup({
-  "maxWidth": 320,
+            var icon_2d7e50183c15a6dc10478112c76cb0a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8a39c8d18b0b1cc14e320e2963c38a9 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_09c4eaf93aecf62b4e88620d4f9a530b = $(`<div id="html_09c4eaf93aecf62b4e88620d4f9a530b" style="width: 100.0%; height: 100.0%;"><b>川島織物セルコン・川島織物文化館</b><br>都道府県: 京都府<br>史料群例: 二代・川島甚兵衞関係文書<br>件数: 1<br><small>川島織物文化館</small></div>`)[0];
-                popup_7c6484a38a68e68e8ef11967f8adacb5.setContent(html_09c4eaf93aecf62b4e88620d4f9a530b);
+                var html_b1c33f4a19fe8e3f1c99d1266cfc9224 = $(`<div id="html_b1c33f4a19fe8e3f1c99d1266cfc9224" style="width: 100.0%; height: 100.0%;"><b>川島織物セルコン・川島織物文化館</b><br>都道府県: 京都府<br>地域ブロック: 近畿<br>所収史料群名: 二代・川島甚兵衞関係文書<br>所蔵確認点数: 14<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_c8a39c8d18b0b1cc14e320e2963c38a9.setContent(html_b1c33f4a19fe8e3f1c99d1266cfc9224);
             
         
 
-        marker_78223ac83b430e859cd5b05d7730edc2.bindPopup(popup_7c6484a38a68e68e8ef11967f8adacb5)
+        marker_dc3369dea439b3dd936fc0bb262e880c.bindPopup(popup_c8a39c8d18b0b1cc14e320e2963c38a9)
         ;
 
         
     
     
-            marker_78223ac83b430e859cd5b05d7730edc2.bindTooltip(
+            marker_dc3369dea439b3dd936fc0bb262e880c.bindTooltip(
                 `<div>
                      川島織物セルコン・川島織物文化館
                  </div>`,
@@ -1084,31 +1548,45 @@
             );
         
     
-            var marker_6f643ca5862f03048ce355d512154791 = L.marker(
-                [35.0391537, 135.7777699],
+                marker_dc3369dea439b3dd936fc0bb262e880c.setIcon(icon_2d7e50183c15a6dc10478112c76cb0a4);
+            
+    
+            var marker_c6b49a7e4907d19d6fbf94def141417a = L.marker(
+                [34.662, 135.506],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_fe235934dce62f9280c338a880a709a8);
         
     
-        var popup_eb6d17d14ddd7e3268de23a35f59569b = L.popup({
-  "maxWidth": 320,
+            var icon_ace3e8b1860bc240bf0be4c1060afecf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74d68c2ff32f4222fc2e6393ffb62feb = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_fb166018e68b7cfd2c0a0ab9e7874f66 = $(`<div id="html_fb166018e68b7cfd2c0a0ab9e7874f66" style="width: 100.0%; height: 100.0%;"><b>高島屋史料館</b><br>都道府県: 京都府<br>史料群例: <br>件数: 0<br><small>京都大学 福井謙一記念研究センター, 川端通, 田中馬場町, 左京区, 京都市, 京都府, 606-8101, 日本</small></div>`)[0];
-                popup_eb6d17d14ddd7e3268de23a35f59569b.setContent(html_fb166018e68b7cfd2c0a0ab9e7874f66);
+                var html_e2ea00f8bedea3e879f155337fe06e6f = $(`<div id="html_e2ea00f8bedea3e879f155337fe06e6f" style="width: 100.0%; height: 100.0%;"><b>高島屋史料館</b><br>都道府県: 京都府<br>地域ブロック: 近畿<br>調査済: 0.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_74d68c2ff32f4222fc2e6393ffb62feb.setContent(html_e2ea00f8bedea3e879f155337fe06e6f);
             
         
 
-        marker_6f643ca5862f03048ce355d512154791.bindPopup(popup_eb6d17d14ddd7e3268de23a35f59569b)
+        marker_c6b49a7e4907d19d6fbf94def141417a.bindPopup(popup_74d68c2ff32f4222fc2e6393ffb62feb)
         ;
 
         
     
     
-            marker_6f643ca5862f03048ce355d512154791.bindTooltip(
+            marker_c6b49a7e4907d19d6fbf94def141417a.bindTooltip(
                 `<div>
                      高島屋史料館
                  </div>`,
@@ -1118,31 +1596,45 @@
             );
         
     
-            var marker_3a0513f8078f5c66a8c5b55111e8436e = L.marker(
-                [34.68985, 135.19567],
+                marker_c6b49a7e4907d19d6fbf94def141417a.setIcon(icon_ace3e8b1860bc240bf0be4c1060afecf);
+            
+    
+            var marker_bc2a596543d0c2e5b3bdeb2763c63cd5 = L.marker(
+                [34.687284, 135.193228],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_fe235934dce62f9280c338a880a709a8);
         
     
-        var popup_c9e298e24530b08c6feaf74772448dae = L.popup({
-  "maxWidth": 320,
+            var icon_741f206dc530c4b973ad94d111ca2271 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d86ab443ae39944ac9eae58727f2704a = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_f2736dad47fa525ece8f57a654c96d04 = $(`<div id="html_f2736dad47fa525ece8f57a654c96d04" style="width: 100.0%; height: 100.0%;"><b>川崎美術館→神戸市立博物館</b><br>都道府県: 兵庫県<br>史料群例: <br>件数: 0<br><small>神戸市立博物館</small></div>`)[0];
-                popup_c9e298e24530b08c6feaf74772448dae.setContent(html_f2736dad47fa525ece8f57a654c96d04);
+                var html_0b2e21c7ff66b3a52899e05bfdd5e1f3 = $(`<div id="html_0b2e21c7ff66b3a52899e05bfdd5e1f3" style="width: 100.0%; height: 100.0%;"><b>川崎美術館→神戸市立博物館</b><br>〒650-0034 兵庫県神戸市中央区京町24−24<br>都道府県: 兵庫県<br>地域ブロック: 近畿<br>調査済: 0.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_d86ab443ae39944ac9eae58727f2704a.setContent(html_0b2e21c7ff66b3a52899e05bfdd5e1f3);
             
         
 
-        marker_3a0513f8078f5c66a8c5b55111e8436e.bindPopup(popup_c9e298e24530b08c6feaf74772448dae)
+        marker_bc2a596543d0c2e5b3bdeb2763c63cd5.bindPopup(popup_d86ab443ae39944ac9eae58727f2704a)
         ;
 
         
     
     
-            marker_3a0513f8078f5c66a8c5b55111e8436e.bindTooltip(
+            marker_bc2a596543d0c2e5b3bdeb2763c63cd5.bindTooltip(
                 `<div>
                      川崎美術館→神戸市立博物館
                  </div>`,
@@ -1152,31 +1644,45 @@
             );
         
     
-            var marker_8a8c9c9a82655d729d451ba21b61fd75 = L.marker(
-                [34.6843729, 135.5112811],
+                marker_bc2a596543d0c2e5b3bdeb2763c63cd5.setIcon(icon_741f206dc530c4b973ad94d111ca2271);
+            
+    
+            var marker_5669362add2a12ae21889ff8ed8a2fb5 = L.marker(
+                [34.684342, 135.511236],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_fe235934dce62f9280c338a880a709a8);
         
     
-        var popup_b3f7a97aae59f549c5cc227a8a34099c = L.popup({
-  "maxWidth": 320,
+            var icon_12e4291f83c8e05ce70f360f6d7d9169 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29cf93752e58d7dedd1df02156bf68aa = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_e933b86a8a04b10751527ef7b9e30caf = $(`<div id="html_e933b86a8a04b10751527ef7b9e30caf" style="width: 100.0%; height: 100.0%;"><b>大阪商工会議所所蔵</b><br>都道府県: 大阪府<br>史料群例: 五代友厚関係文書<br>件数: 1<br><small>大阪商工会議所, 松屋町筋, 本町橋, 中央区, 大阪市, 大阪府, 540-0026, 日本</small></div>`)[0];
-                popup_b3f7a97aae59f549c5cc227a8a34099c.setContent(html_e933b86a8a04b10751527ef7b9e30caf);
+                var html_3db00109bb1b3a89db4278f23290346c = $(`<div id="html_3db00109bb1b3a89db4278f23290346c" style="width: 100.0%; height: 100.0%;"><b>大阪商工会議所所蔵</b><br>都道府県: 大阪府<br>地域ブロック: 近畿<br>所収史料群名: 五代友厚関係文書<br>所蔵確認点数: 3<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_29cf93752e58d7dedd1df02156bf68aa.setContent(html_3db00109bb1b3a89db4278f23290346c);
             
         
 
-        marker_8a8c9c9a82655d729d451ba21b61fd75.bindPopup(popup_b3f7a97aae59f549c5cc227a8a34099c)
+        marker_5669362add2a12ae21889ff8ed8a2fb5.bindPopup(popup_29cf93752e58d7dedd1df02156bf68aa)
         ;
 
         
     
     
-            marker_8a8c9c9a82655d729d451ba21b61fd75.bindTooltip(
+            marker_5669362add2a12ae21889ff8ed8a2fb5.bindTooltip(
                 `<div>
                      大阪商工会議所所蔵
                  </div>`,
@@ -1186,31 +1692,45 @@
             );
         
     
-            var marker_8e3dac4370db2c7739c331ef515b212f = L.marker(
-                [34.7772953, 135.5617138],
+                marker_5669362add2a12ae21889ff8ed8a2fb5.setIcon(icon_12e4291f83c8e05ce70f360f6d7d9169);
+            
+    
+            var marker_34e3e5e3deef30955d7da3892aa6fcb5 = L.marker(
+                [34.784621, 135.562],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_fe235934dce62f9280c338a880a709a8);
         
     
-        var popup_d5c847e459a4909e4402259f132bda3f = L.popup({
-  "maxWidth": 320,
+            var icon_50d23cbc3f1ce12f8ee3f9cae814100f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_065d044ba0bc51434585a05494ccd86a = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_647574c5b3b6684c6767989e1c031cb9 = $(`<div id="html_647574c5b3b6684c6767989e1c031cb9" style="width: 100.0%; height: 100.0%;"><b>摂津市史編さん室</b><br>都道府県: 大阪府<br>史料群例: <br>件数: 0<br><small>摂津市, 大阪府, 日本</small></div>`)[0];
-                popup_d5c847e459a4909e4402259f132bda3f.setContent(html_647574c5b3b6684c6767989e1c031cb9);
+                var html_052592b21af22df66a22832949de7f81 = $(`<div id="html_052592b21af22df66a22832949de7f81" style="width: 100.0%; height: 100.0%;"><b>摂津市史編さん室</b><br>大阪府摂津市<br>都道府県: 大阪府<br>地域ブロック: 近畿<br>調査済: 0.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_065d044ba0bc51434585a05494ccd86a.setContent(html_052592b21af22df66a22832949de7f81);
             
         
 
-        marker_8e3dac4370db2c7739c331ef515b212f.bindPopup(popup_d5c847e459a4909e4402259f132bda3f)
+        marker_34e3e5e3deef30955d7da3892aa6fcb5.bindPopup(popup_065d044ba0bc51434585a05494ccd86a)
         ;
 
         
     
     
-            marker_8e3dac4370db2c7739c331ef515b212f.bindTooltip(
+            marker_34e3e5e3deef30955d7da3892aa6fcb5.bindTooltip(
                 `<div>
                      摂津市史編さん室
                  </div>`,
@@ -1220,31 +1740,54 @@
             );
         
     
-            var marker_1db5c2de4779be9b0728188173c3e46d = L.marker(
-                [35.60453, 140.12379],
-                {
-}
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+                marker_34e3e5e3deef30955d7da3892aa6fcb5.setIcon(icon_50d23cbc3f1ce12f8ee3f9cae814100f);
+            
+    
+            feature_group_fe235934dce62f9280c338a880a709a8.addTo(map_df9f1e4ea518fd319ea4e08f57467d9a);
         
     
-        var popup_f08fe6ea4d4fc485465aed6886888a93 = L.popup({
-  "maxWidth": 320,
+            var feature_group_c0e379568f7bddb5ce7f6a28acab4f97 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_bced7781f041ec3bbbab5118307d1b35 = L.marker(
+                [35.604785, 140.121252],
+                {
+}
+            ).addTo(feature_group_c0e379568f7bddb5ce7f6a28acab4f97);
+        
+    
+            var icon_17466cc8714dc06324ec192df5f070ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_701cf5397e61aff063d94340ac06726c = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_8deb7da9295302d7a202631511db724a = $(`<div id="html_8deb7da9295302d7a202631511db724a" style="width: 100.0%; height: 100.0%;"><b>千葉県文書館</b><br>都道府県: 千葉県<br>史料群例: 東京都世田谷区北沢 梅田家文書<br>件数: 0<br><small>千葉県文書館</small></div>`)[0];
-                popup_f08fe6ea4d4fc485465aed6886888a93.setContent(html_8deb7da9295302d7a202631511db724a);
+                var html_905d05130853015575ac570c3a9f8ed9 = $(`<div id="html_905d05130853015575ac570c3a9f8ed9" style="width: 100.0%; height: 100.0%;"><b>千葉県文書館</b><br>都道府県: 千葉県<br>地域ブロック: 関東<br>所収史料群名: 東京都世田谷区北沢 梅田家文書<br>調査済: 0.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_701cf5397e61aff063d94340ac06726c.setContent(html_905d05130853015575ac570c3a9f8ed9);
             
         
 
-        marker_1db5c2de4779be9b0728188173c3e46d.bindPopup(popup_f08fe6ea4d4fc485465aed6886888a93)
+        marker_bced7781f041ec3bbbab5118307d1b35.bindPopup(popup_701cf5397e61aff063d94340ac06726c)
         ;
 
         
     
     
-            marker_1db5c2de4779be9b0728188173c3e46d.bindTooltip(
+            marker_bced7781f041ec3bbbab5118307d1b35.bindTooltip(
                 `<div>
                      千葉県文書館
                  </div>`,
@@ -1254,31 +1797,45 @@
             );
         
     
-            var marker_7ce5800073339f8f0379f91cd45df0a3 = L.marker(
-                [35.72382, 140.22651],
+                marker_bced7781f041ec3bbbab5118307d1b35.setIcon(icon_17466cc8714dc06324ec192df5f070ae);
+            
+    
+            var marker_a902fd386e7e72cc4a466b9a5fd2f0c3 = L.marker(
+                [35.724422, 140.219101],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_c0e379568f7bddb5ce7f6a28acab4f97);
         
     
-        var popup_625c7a1f34ed0e4a481d72a10637756d = L.popup({
-  "maxWidth": 320,
+            var icon_dec7f52e34ded03cd94c220aeb18f96e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42aac9086b805868f5120034eef9fd67 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_05c0b28eeab8c149c151c5470b853047 = $(`<div id="html_05c0b28eeab8c149c151c5470b853047" style="width: 100.0%; height: 100.0%;"><b>国立歴史民俗博物館</b><br>都道府県: 千葉県<br>史料群例: 池田さなえ収集品川弥二郎書簡<br>件数: 1<br><small>国立歴史民俗博物館</small></div>`)[0];
-                popup_625c7a1f34ed0e4a481d72a10637756d.setContent(html_05c0b28eeab8c149c151c5470b853047);
+                var html_0197600ddeea4a7fcf9c46d12b40284d = $(`<div id="html_0197600ddeea4a7fcf9c46d12b40284d" style="width: 100.0%; height: 100.0%;"><b>国立歴史民俗博物館</b><br>都道府県: 千葉県<br>地域ブロック: 関東<br>所収史料群名: 池田さなえ収集品川弥二郎書簡<br>所蔵確認点数: 2<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_42aac9086b805868f5120034eef9fd67.setContent(html_0197600ddeea4a7fcf9c46d12b40284d);
             
         
 
-        marker_7ce5800073339f8f0379f91cd45df0a3.bindPopup(popup_625c7a1f34ed0e4a481d72a10637756d)
+        marker_a902fd386e7e72cc4a466b9a5fd2f0c3.bindPopup(popup_42aac9086b805868f5120034eef9fd67)
         ;
 
         
     
     
-            marker_7ce5800073339f8f0379f91cd45df0a3.bindTooltip(
+            marker_a902fd386e7e72cc4a466b9a5fd2f0c3.bindTooltip(
                 `<div>
                      国立歴史民俗博物館
                  </div>`,
@@ -1288,31 +1845,45 @@
             );
         
     
-            var marker_af2f92d5a5f5778ace4402997b9dcda7 = L.marker(
-                [35.86173, 139.64548],
+                marker_a902fd386e7e72cc4a466b9a5fd2f0c3.setIcon(icon_dec7f52e34ded03cd94c220aeb18f96e);
+            
+    
+            var marker_410abf9e766899eb8006ec147e6004d4 = L.marker(
+                [35.857319, 139.646958],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_c0e379568f7bddb5ce7f6a28acab4f97);
         
     
-        var popup_8ed0b6a353e106ce1a321ac54d27d059 = L.popup({
-  "maxWidth": 320,
+            var icon_d32cb514729576e1d11bd4fd3b2763f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d73642b6aca59e253d3c8d59da3669c = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_a6e8b018c49f6a6d2c4dded69378275b = $(`<div id="html_a6e8b018c49f6a6d2c4dded69378275b" style="width: 100.0%; height: 100.0%;"><b>埼玉県立文書館</b><br>都道府県: 埼玉県<br>史料群例: 湯本家文書<br>件数: 0<br><small>埼玉県立文書館</small></div>`)[0];
-                popup_8ed0b6a353e106ce1a321ac54d27d059.setContent(html_a6e8b018c49f6a6d2c4dded69378275b);
+                var html_84ebe49e4d96190f55da4a2d45f1d52b = $(`<div id="html_84ebe49e4d96190f55da4a2d45f1d52b" style="width: 100.0%; height: 100.0%;"><b>埼玉県立文書館</b><br>都道府県: 埼玉県<br>地域ブロック: 関東<br>所収史料群名: 湯本家文書<br>調査済: 0.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_5d73642b6aca59e253d3c8d59da3669c.setContent(html_84ebe49e4d96190f55da4a2d45f1d52b);
             
         
 
-        marker_af2f92d5a5f5778ace4402997b9dcda7.bindPopup(popup_8ed0b6a353e106ce1a321ac54d27d059)
+        marker_410abf9e766899eb8006ec147e6004d4.bindPopup(popup_5d73642b6aca59e253d3c8d59da3669c)
         ;
 
         
     
     
-            marker_af2f92d5a5f5778ace4402997b9dcda7.bindTooltip(
+            marker_410abf9e766899eb8006ec147e6004d4.bindTooltip(
                 `<div>
                      埼玉県立文書館
                  </div>`,
@@ -1322,31 +1893,45 @@
             );
         
     
-            var marker_46b211818725c33a4ca09b9b08dd62e4 = L.marker(
-                [35.72962, 139.47667],
+                marker_410abf9e766899eb8006ec147e6004d4.setIcon(icon_d32cb514729576e1d11bd4fd3b2763f2);
+            
+    
+            var marker_2485a57784ee17bfe7c65b46fbe75c6c = L.marker(
+                [35.720861, 139.474107],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_c0e379568f7bddb5ce7f6a28acab4f97);
         
     
-        var popup_09e7ee7bfa990fc01ce04b3b009cfae6 = L.popup({
-  "maxWidth": 320,
+            var icon_d68466d11cf67ae7e490e909c367299a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_110a51a4febbc9e73c3ce262759de6f8 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_ecc175261a8189e13ba936a985e9ae80 = $(`<div id="html_ecc175261a8189e13ba936a985e9ae80" style="width: 100.0%; height: 100.0%;"><b>一橋大学附属図書館小平研究保存図書館</b><br>都道府県: 東京都<br>史料群例: 金原家文書<br>件数: 0<br><small>一橋大学 小平国際キャンパス</small></div>`)[0];
-                popup_09e7ee7bfa990fc01ce04b3b009cfae6.setContent(html_ecc175261a8189e13ba936a985e9ae80);
+                var html_7701a291a5a11bd3e08433117569ce5f = $(`<div id="html_7701a291a5a11bd3e08433117569ce5f" style="width: 100.0%; height: 100.0%;"><b>一橋大学附属図書館小平研究保存図書館</b><br>一橋大学<br>都道府県: 東京都<br>地域ブロック: 関東<br>所収史料群名: 金原家文書<br>調査済: 1.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_110a51a4febbc9e73c3ce262759de6f8.setContent(html_7701a291a5a11bd3e08433117569ce5f);
             
         
 
-        marker_46b211818725c33a4ca09b9b08dd62e4.bindPopup(popup_09e7ee7bfa990fc01ce04b3b009cfae6)
+        marker_2485a57784ee17bfe7c65b46fbe75c6c.bindPopup(popup_110a51a4febbc9e73c3ce262759de6f8)
         ;
 
         
     
     
-            marker_46b211818725c33a4ca09b9b08dd62e4.bindTooltip(
+            marker_2485a57784ee17bfe7c65b46fbe75c6c.bindTooltip(
                 `<div>
                      一橋大学附属図書館小平研究保存図書館
                  </div>`,
@@ -1356,31 +1941,45 @@
             );
         
     
-            var marker_5997cfd65fafba2b86696814f0779c3f = L.marker(
-                [35.67447, 139.74482],
+                marker_2485a57784ee17bfe7c65b46fbe75c6c.setIcon(icon_d68466d11cf67ae7e490e909c367299a);
+            
+    
+            var marker_d5936df4433aa8533e6e39d0ce1cb923 = L.marker(
+                [35.678861, 139.744361],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_c0e379568f7bddb5ce7f6a28acab4f97);
         
     
-        var popup_1b210a5769c653a490c7e572aeb92968 = L.popup({
-  "maxWidth": 320,
+            var icon_4208d811e68c978b44f349828627c948 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35b7985e5a99a97cbc1d7d0dd3d4f19e = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_2d46a0f800c866fd127ab17d6eeb8dcb = $(`<div id="html_2d46a0f800c866fd127ab17d6eeb8dcb" style="width: 100.0%; height: 100.0%;"><b>国立国会図書館憲政資料室</b><br>都道府県: 東京都<br>史料群例: 品川弥二郎関係文書(その1)書簡の部 / 品川弥二郎関係文書(その1)書類の部 / 安達謙蔵関係文書 / 井上馨関係文書 / 榎本武揚関係文書<br>件数: 16<br><small>国立国会図書館憲政資料室</small></div>`)[0];
-                popup_1b210a5769c653a490c7e572aeb92968.setContent(html_2d46a0f800c866fd127ab17d6eeb8dcb);
+                var html_7da61b172dae6987106c6d50aa8536ac = $(`<div id="html_7da61b172dae6987106c6d50aa8536ac" style="width: 100.0%; height: 100.0%;"><b>国立国会図書館憲政資料室</b><br>千代田区永田町1丁目10−1 / 千代田区永田町1丁目10−1 / 千代田区永田町1丁目10−1<br>都道府県: 東京都<br>地域ブロック: 関東<br>所収史料群名: 品川弥二郎関係文書(その1)書簡の部 / 品川弥二郎関係文書(その1)書類の部 / 安達謙蔵関係文書 / 井上馨関係文書 / 榎本武揚関係文書<br>所蔵確認点数: 1 / 11 / 12 / 18 / 2 / 2083 / 21 / 3 / 31 / 3642 / 5 / 6 / 8<br>調査済: 1.0 / 2.0<br>『近現代人物史料情報辞典』の記載: 1.0</div>`)[0];
+                popup_35b7985e5a99a97cbc1d7d0dd3d4f19e.setContent(html_7da61b172dae6987106c6d50aa8536ac);
             
         
 
-        marker_5997cfd65fafba2b86696814f0779c3f.bindPopup(popup_1b210a5769c653a490c7e572aeb92968)
+        marker_d5936df4433aa8533e6e39d0ce1cb923.bindPopup(popup_35b7985e5a99a97cbc1d7d0dd3d4f19e)
         ;
 
         
     
     
-            marker_5997cfd65fafba2b86696814f0779c3f.bindTooltip(
+            marker_d5936df4433aa8533e6e39d0ce1cb923.bindTooltip(
                 `<div>
                      国立国会図書館憲政資料室
                  </div>`,
@@ -1390,31 +1989,45 @@
             );
         
     
-            var marker_19f42c124de4fe94c4a4026a345d27bd = L.marker(
-                [35.65914, 139.70656],
+                marker_d5936df4433aa8533e6e39d0ce1cb923.setIcon(icon_4208d811e68c978b44f349828627c948);
+            
+    
+            var marker_6d090e40084a2c88b2236e3afc52ecb7 = L.marker(
+                [35.655644, 139.71165],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_c0e379568f7bddb5ce7f6a28acab4f97);
         
     
-        var popup_ed115e30b64d4e05933f0926e1538ecf = L.popup({
-  "maxWidth": 320,
+            var icon_38b660bf53eb275e86bb93ce847a7037 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5256a8271eeb426889ba6c7e76d1c856 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_128abaed5f2a9f3f9d197af428374cc8 = $(`<div id="html_128abaed5f2a9f3f9d197af428374cc8" style="width: 100.0%; height: 100.0%;"><b>國學院大學</b><br>都道府県: 東京都<br>史料群例: 品川弥二郎書簡(名称確認中)<br>件数: 1<br><small>國學院大學</small></div>`)[0];
-                popup_ed115e30b64d4e05933f0926e1538ecf.setContent(html_128abaed5f2a9f3f9d197af428374cc8);
+                var html_5818a23bb29202852ce4267544b9a55a = $(`<div id="html_5818a23bb29202852ce4267544b9a55a" style="width: 100.0%; height: 100.0%;"><b>國學院大學</b><br>都道府県: 東京都<br>地域ブロック: 関東<br>所収史料群名: 品川弥二郎書簡(名称確認中)<br>所蔵確認点数: 1<br>調査済: 0.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_5256a8271eeb426889ba6c7e76d1c856.setContent(html_5818a23bb29202852ce4267544b9a55a);
             
         
 
-        marker_19f42c124de4fe94c4a4026a345d27bd.bindPopup(popup_ed115e30b64d4e05933f0926e1538ecf)
+        marker_6d090e40084a2c88b2236e3afc52ecb7.bindPopup(popup_5256a8271eeb426889ba6c7e76d1c856)
         ;
 
         
     
     
-            marker_19f42c124de4fe94c4a4026a345d27bd.bindTooltip(
+            marker_6d090e40084a2c88b2236e3afc52ecb7.bindTooltip(
                 `<div>
                      國學院大學
                  </div>`,
@@ -1424,31 +2037,45 @@
             );
         
     
-            var marker_f9f5fc18f24a525334e834136bda4e70 = L.marker(
-                [35.68522, 139.7528],
+                marker_6d090e40084a2c88b2236e3afc52ecb7.setIcon(icon_38b660bf53eb275e86bb93ce847a7037);
+            
+    
+            var marker_9395200afaa95b782dfab92989e32e3e = L.marker(
+                [35.689, 139.755417],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_c0e379568f7bddb5ce7f6a28acab4f97);
         
     
-        var popup_87aa250b6fb521f24de93a7024683822 = L.popup({
-  "maxWidth": 320,
+            var icon_fa74af87d247797b4fb25167d7413393 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c7dc722e8d8b8b8085b0e7653dfb945 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_6ccc59fb6f87c04035feb324984a2efb = $(`<div id="html_6ccc59fb6f87c04035feb324984a2efb" style="width: 100.0%; height: 100.0%;"><b>宮内庁書陵部図書寮文庫</b><br>都道府県: 東京都<br>史料群例: 徳大寺実則日記<br>件数: 0<br><small>宮内庁書陵部図書寮文庫</small></div>`)[0];
-                popup_87aa250b6fb521f24de93a7024683822.setContent(html_6ccc59fb6f87c04035feb324984a2efb);
+                var html_4299f4e1c76ffe4df3bb13e17257995b = $(`<div id="html_4299f4e1c76ffe4df3bb13e17257995b" style="width: 100.0%; height: 100.0%;"><b>宮内庁書陵部図書寮文庫</b><br>〒100-0001 東京都千代田区千代田1−1<br>都道府県: 東京都<br>地域ブロック: 関東<br>所収史料群名: 徳大寺実則日記<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_0c7dc722e8d8b8b8085b0e7653dfb945.setContent(html_4299f4e1c76ffe4df3bb13e17257995b);
             
         
 
-        marker_f9f5fc18f24a525334e834136bda4e70.bindPopup(popup_87aa250b6fb521f24de93a7024683822)
+        marker_9395200afaa95b782dfab92989e32e3e.bindPopup(popup_0c7dc722e8d8b8b8085b0e7653dfb945)
         ;
 
         
     
     
-            marker_f9f5fc18f24a525334e834136bda4e70.bindTooltip(
+            marker_9395200afaa95b782dfab92989e32e3e.bindTooltip(
                 `<div>
                      宮内庁書陵部図書寮文庫
                  </div>`,
@@ -1458,31 +2085,45 @@
             );
         
     
-            var marker_70623b449ab12c167ae0cad43664c3d1 = L.marker(
-                [35.70908, 139.71937],
+                marker_9395200afaa95b782dfab92989e32e3e.setIcon(icon_fa74af87d247797b4fb25167d7413393);
+            
+    
+            var marker_700352d7f3808dba0bceb7a29c00ce23 = L.marker(
+                [35.709182, 139.719522],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_c0e379568f7bddb5ce7f6a28acab4f97);
         
     
-        var popup_3117ae799b9b4b3806a1f1db3e08f10b = L.popup({
-  "maxWidth": 320,
+            var icon_cbd81f9dca0e34b0999d7144de8ede24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_557112c3d5376e6884708ffea332aa7f = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_056b12d0422739d4b2f5f29735f4dff2 = $(`<div id="html_056b12d0422739d4b2f5f29735f4dff2" style="width: 100.0%; height: 100.0%;"><b>早稲田大学</b><br>都道府県: 東京都<br>史料群例: 大木喬透書簡大原重徳宛<br>件数: 0<br><small>早稲田大学</small></div>`)[0];
-                popup_3117ae799b9b4b3806a1f1db3e08f10b.setContent(html_056b12d0422739d4b2f5f29735f4dff2);
+                var html_ee4f04b888789ec4d06bae50148f4baa = $(`<div id="html_ee4f04b888789ec4d06bae50148f4baa" style="width: 100.0%; height: 100.0%;"><b>早稲田大学</b><br>都道府県: 東京都<br>地域ブロック: 関東<br>所収史料群名: 大木喬透書簡大原重徳宛<br>調査済: 0.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_557112c3d5376e6884708ffea332aa7f.setContent(html_ee4f04b888789ec4d06bae50148f4baa);
             
         
 
-        marker_70623b449ab12c167ae0cad43664c3d1.bindPopup(popup_3117ae799b9b4b3806a1f1db3e08f10b)
+        marker_700352d7f3808dba0bceb7a29c00ce23.bindPopup(popup_557112c3d5376e6884708ffea332aa7f)
         ;
 
         
     
     
-            marker_70623b449ab12c167ae0cad43664c3d1.bindTooltip(
+            marker_700352d7f3808dba0bceb7a29c00ce23.bindTooltip(
                 `<div>
                      早稲田大学
                  </div>`,
@@ -1492,31 +2133,45 @@
             );
         
     
-            var marker_43652b894c51ed9b38b69cdf163d1a5e = L.marker(
-                [35.65872, 139.72633],
+                marker_700352d7f3808dba0bceb7a29c00ce23.setIcon(icon_cbd81f9dca0e34b0999d7144de8ede24);
+            
+    
+            var marker_004c205c472bb2823269db1f2f4836c5 = L.marker(
+                [35.652096, 139.72634],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_c0e379568f7bddb5ce7f6a28acab4f97);
         
     
-        var popup_0d26f6f8c803b5b36256af1f1a60918a = L.popup({
-  "maxWidth": 320,
+            var icon_33d16ea72e596220434c5e9aa039001f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb2eee81096f8815e42548f076391800 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_3c9df02e4426a1f4137b22f3d75152ba = $(`<div id="html_3c9df02e4426a1f4137b22f3d75152ba" style="width: 100.0%; height: 100.0%;"><b>東京都立中央図書館</b><br>都道府県: 東京都<br>史料群例: 渡辺刀水旧蔵諸家書簡文庫<br>件数: 0<br><small>東京都立中央図書館</small></div>`)[0];
-                popup_0d26f6f8c803b5b36256af1f1a60918a.setContent(html_3c9df02e4426a1f4137b22f3d75152ba);
+                var html_8ece152390cae5f92a0d864e47db1754 = $(`<div id="html_8ece152390cae5f92a0d864e47db1754" style="width: 100.0%; height: 100.0%;"><b>東京都立中央図書館</b><br>都道府県: 東京都<br>地域ブロック: 関東<br>所収史料群名: 渡辺刀水旧蔵諸家書簡文庫<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_cb2eee81096f8815e42548f076391800.setContent(html_8ece152390cae5f92a0d864e47db1754);
             
         
 
-        marker_43652b894c51ed9b38b69cdf163d1a5e.bindPopup(popup_0d26f6f8c803b5b36256af1f1a60918a)
+        marker_004c205c472bb2823269db1f2f4836c5.bindPopup(popup_cb2eee81096f8815e42548f076391800)
         ;
 
         
     
     
-            marker_43652b894c51ed9b38b69cdf163d1a5e.bindTooltip(
+            marker_004c205c472bb2823269db1f2f4836c5.bindTooltip(
                 `<div>
                      東京都立中央図書館
                  </div>`,
@@ -1526,31 +2181,45 @@
             );
         
     
-            var marker_d6f5b1f19612548a3eb4adefb0806e83 = L.marker(
-                [35.61555, 139.37957],
+                marker_004c205c472bb2823269db1f2f4836c5.setIcon(icon_33d16ea72e596220434c5e9aa039001f);
+            
+    
+            var marker_cb678cfcdcfef92557a7f0be29d48049 = L.marker(
+                [35.616528, 139.377194],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_c0e379568f7bddb5ce7f6a28acab4f97);
         
     
-        var popup_97c3a09ddf17d6ad321824c2b723e9b4 = L.popup({
-  "maxWidth": 320,
+            var icon_30228403681005b8ce2d034d7aa8446c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42feafcae81ef232179548564efe729f = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_6179bf2f82cc73dc12828e9b58e43328 = $(`<div id="html_6179bf2f82cc73dc12828e9b58e43328" style="width: 100.0%; height: 100.0%;"><b>東京都立大学</b><br>都道府県: 東京都<br>史料群例: 高橋是清関係文書 / 土方久元関係文書<br>件数: 0<br><small>東京都立大学</small></div>`)[0];
-                popup_97c3a09ddf17d6ad321824c2b723e9b4.setContent(html_6179bf2f82cc73dc12828e9b58e43328);
+                var html_d8095c9050b6086d351b50b9148396ea = $(`<div id="html_d8095c9050b6086d351b50b9148396ea" style="width: 100.0%; height: 100.0%;"><b>東京都立大学</b><br>〒192-0397 東京都八王子市南大沢1丁目1 / 〒192-0397 東京都八王子市南大沢1丁目1<br>都道府県: 東京都<br>地域ブロック: 関東<br>所収史料群名: 高橋是清関係文書 / 土方久元関係文書<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_42feafcae81ef232179548564efe729f.setContent(html_d8095c9050b6086d351b50b9148396ea);
             
         
 
-        marker_d6f5b1f19612548a3eb4adefb0806e83.bindPopup(popup_97c3a09ddf17d6ad321824c2b723e9b4)
+        marker_cb678cfcdcfef92557a7f0be29d48049.bindPopup(popup_42feafcae81ef232179548564efe729f)
         ;
 
         
     
     
-            marker_d6f5b1f19612548a3eb4adefb0806e83.bindTooltip(
+            marker_cb678cfcdcfef92557a7f0be29d48049.bindTooltip(
                 `<div>
                      東京都立大学
                  </div>`,
@@ -1560,31 +2229,45 @@
             );
         
     
-            var marker_4407279e27b8fcb0a55b870e9af9b323 = L.marker(
-                [35.4475, 139.64235],
+                marker_cb678cfcdcfef92557a7f0be29d48049.setIcon(icon_30228403681005b8ce2d034d7aa8446c);
+            
+    
+            var marker_862944660ed1f1dbebb7a1e5ec2aea05 = L.marker(
+                [35.465361, 139.521],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_c0e379568f7bddb5ce7f6a28acab4f97);
         
     
-        var popup_f4e474ed27be41603ef3714145d7084b = L.popup({
-  "maxWidth": 320,
+            var icon_046020178e75349ba1b63f89642cdfc7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce63f119b62de73ccd66e0a926720525 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_181b3197ee81e07b95afae50d9b99709 = $(`<div id="html_181b3197ee81e07b95afae50d9b99709" style="width: 100.0%; height: 100.0%;"><b>神奈川県公文書館</b><br>都道府県: 東京都<br>史料群例: 山口コレクション<br>件数: 0<br><small>神奈川県公文書館</small></div>`)[0];
-                popup_f4e474ed27be41603ef3714145d7084b.setContent(html_181b3197ee81e07b95afae50d9b99709);
+                var html_5f30edaf57ecb3fa6f4ef4a851366186 = $(`<div id="html_5f30edaf57ecb3fa6f4ef4a851366186" style="width: 100.0%; height: 100.0%;"><b>神奈川県公文書館</b><br>都道府県: 東京都<br>地域ブロック: 関東<br>所収史料群名: 山口コレクション<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_ce63f119b62de73ccd66e0a926720525.setContent(html_5f30edaf57ecb3fa6f4ef4a851366186);
             
         
 
-        marker_4407279e27b8fcb0a55b870e9af9b323.bindPopup(popup_f4e474ed27be41603ef3714145d7084b)
+        marker_862944660ed1f1dbebb7a1e5ec2aea05.bindPopup(popup_ce63f119b62de73ccd66e0a926720525)
         ;
 
         
     
     
-            marker_4407279e27b8fcb0a55b870e9af9b323.bindTooltip(
+            marker_862944660ed1f1dbebb7a1e5ec2aea05.bindTooltip(
                 `<div>
                      神奈川県公文書館
                  </div>`,
@@ -1594,31 +2277,45 @@
             );
         
     
-            var marker_17aad96e8c98707e33d1d65c107894bd = L.marker(
-                [36.83905, 139.92217],
+                marker_862944660ed1f1dbebb7a1e5ec2aea05.setIcon(icon_046020178e75349ba1b63f89642cdfc7);
+            
+    
+            var marker_311e3fc38b02c3d422e91238c0c308f8 = L.marker(
+                [36.8807, 139.8799],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_c0e379568f7bddb5ce7f6a28acab4f97);
         
     
-        var popup_5f5efbd7d47da317a23a939a151f9d64 = L.popup({
-  "maxWidth": 320,
+            var icon_0726437895ccc110e44862fce2cd93ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63c4c6eb0c898f23f94628c105548f07 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_05625107c78b3540c73dac8f286d59de = $(`<div id="html_05625107c78b3540c73dac8f286d59de" style="width: 100.0%; height: 100.0%;"><b>山縣有朋記念館</b><br>都道府県: 栃木県<br>史料群例: 品川弥二郎宛山県有朋書簡<br>件数: 1<br><small>山縣有朋記念館</small></div>`)[0];
-                popup_5f5efbd7d47da317a23a939a151f9d64.setContent(html_05625107c78b3540c73dac8f286d59de);
+                var html_cf178ec25612d710fe3d5782ffecad1e = $(`<div id="html_cf178ec25612d710fe3d5782ffecad1e" style="width: 100.0%; height: 100.0%;"><b>山縣有朋記念館</b><br>〒329-2501 栃木県矢板市上伊佐野1022<br>都道府県: 栃木県<br>地域ブロック: 関東<br>所収史料群名: 品川弥二郎宛山県有朋書簡<br>所蔵確認点数: 1<br>調査済: 2.0<br>『近現代人物史料情報辞典』の記載: 0.0</div>`)[0];
+                popup_63c4c6eb0c898f23f94628c105548f07.setContent(html_cf178ec25612d710fe3d5782ffecad1e);
             
         
 
-        marker_17aad96e8c98707e33d1d65c107894bd.bindPopup(popup_5f5efbd7d47da317a23a939a151f9d64)
+        marker_311e3fc38b02c3d422e91238c0c308f8.bindPopup(popup_63c4c6eb0c898f23f94628c105548f07)
         ;
 
         
     
     
-            marker_17aad96e8c98707e33d1d65c107894bd.bindTooltip(
+            marker_311e3fc38b02c3d422e91238c0c308f8.bindTooltip(
                 `<div>
                      山縣有朋記念館
                  </div>`,
@@ -1628,31 +2325,45 @@
             );
         
     
-            var marker_7e9c3bf44ad919966305ec83cc4f16f0 = L.marker(
-                [36.38143, 140.4459],
+                marker_311e3fc38b02c3d422e91238c0c308f8.setIcon(icon_0726437895ccc110e44862fce2cd93ff);
+            
+    
+            var marker_f5d8da8ad3dfb059695d88af4a760fdf = L.marker(
+                [36.37907, 140.449779],
                 {
 }
-            ).addTo(map_6cd02bb9b9f6112dc773c3636df944cd);
+            ).addTo(feature_group_c0e379568f7bddb5ce7f6a28acab4f97);
         
     
-        var popup_71ee0f04e1f8d7e2379792a9aa510263 = L.popup({
-  "maxWidth": 320,
+            var icon_6caf837b5655844c47f8c94f6ec7b9ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_143cadc667ea81f6c5dd43ff2746b125 = L.popup({
+  "maxWidth": 360,
 });
 
         
             
-                var html_b5efa962d3d869d931b5b8d4007b4c84 = $(`<div id="html_b5efa962d3d869d931b5b8d4007b4c84" style="width: 100.0%; height: 100.0%;"><b>茨城県立歴史館</b><br>都道府県: 茨城県<br>史料群例: 根本氏収集史料(写真帳)126<br>件数: 1<br><small>茨城県立歴史館</small></div>`)[0];
-                popup_71ee0f04e1f8d7e2379792a9aa510263.setContent(html_b5efa962d3d869d931b5b8d4007b4c84);
+                var html_0a457e763535d9d11539ea1775130ff0 = $(`<div id="html_0a457e763535d9d11539ea1775130ff0" style="width: 100.0%; height: 100.0%;"><b>茨城県立歴史館</b><br>都道府県: 茨城県<br>地域ブロック: 関東<br>所収史料群名: 根本氏収集史料(写真帳)126<br>所蔵確認点数: 1<br>調査済: 0.0<br>『近現代人物史料情報辞典』の記載: 0.0<br>備考: 天野記入</div>`)[0];
+                popup_143cadc667ea81f6c5dd43ff2746b125.setContent(html_0a457e763535d9d11539ea1775130ff0);
             
         
 
-        marker_7e9c3bf44ad919966305ec83cc4f16f0.bindPopup(popup_71ee0f04e1f8d7e2379792a9aa510263)
+        marker_f5d8da8ad3dfb059695d88af4a760fdf.bindPopup(popup_143cadc667ea81f6c5dd43ff2746b125)
         ;
 
         
     
     
-            marker_7e9c3bf44ad919966305ec83cc4f16f0.bindTooltip(
+            marker_f5d8da8ad3dfb059695d88af4a760fdf.bindTooltip(
                 `<div>
                      茨城県立歴史館
                  </div>`,
@@ -1660,6 +2371,39 @@
   "sticky": true,
 }
             );
+        
+    
+                marker_f5d8da8ad3dfb059695d88af4a760fdf.setIcon(icon_6caf837b5655844c47f8c94f6ec7b9ff);
+            
+    
+            feature_group_c0e379568f7bddb5ce7f6a28acab4f97.addTo(map_df9f1e4ea518fd319ea4e08f57467d9a);
+        
+    
+            var layer_control_23ead44f3520c702100c625154f8c085_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_52b222d836d515e3d8186529706ffa98,
+                },
+                overlays :  {
+                    "\u4e2d\u56db\u56fd" : feature_group_98f3731f3a942909afe1f166cee8a815,
+                    "\u4e5d\u5dde" : feature_group_1564f8edbd2f84a8b0c6e77f3e21de99,
+                    "\u5317\u6d77\u9053" : feature_group_a23e93f983a4926935a8a3c9eb78223c,
+                    "\u5317\u9678" : feature_group_ecb2d5faf8ff915f1abe97aaa6c19acf,
+                    "\u6771\u5317" : feature_group_e170f434bd0ee5bfec5ac32a53f2fdb0,
+                    "\u6771\u6d77" : feature_group_efd7f8db32126f47c8eac0abeb6afaae,
+                    "\u8fd1\u757f" : feature_group_fe235934dce62f9280c338a880a709a8,
+                    "\u95a2\u6771" : feature_group_c0e379568f7bddb5ce7f6a28acab4f97,
+                },
+            };
+            let layer_control_23ead44f3520c702100c625154f8c085 = L.control.layers(
+                layer_control_23ead44f3520c702100c625154f8c085_layers.base_layers,
+                layer_control_23ead44f3520c702100c625154f8c085_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_df9f1e4ea518fd319ea4e08f57467d9a);
+
         
 </script>
 </html>
