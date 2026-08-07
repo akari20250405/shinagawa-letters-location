@@ -11,6 +11,6 @@ date-released: 2026-08-07
 license: CC-BY-4.0
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.21837614"
-    description: "Version 1.0.2"
-repository-artifact: "https://zenodo.org/records/21837614"
+    value: "10.5281/zenodo.19362512"
+    description: "Concept DOI for all versions"
+repository-artifact: "https://doi.org/10.5281/zenodo.19362512"
