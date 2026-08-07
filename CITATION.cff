@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "この研究成果を利用する場合は、以下の情報を用いて引用してください。"
+type: dataset
+title: "akari20250405/shinagawa-letters-location: 所蔵館情報の訂正版"
+authors:
+  - family-names: "IKEDA"
+    given-names: "Sanae"
+    orcid: "https://orcid.org/0009-0005-9627-0324"
+version: "1.0.2"
+date-released: 2026-08-07
+license: CC-BY-4.0
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21837614"
+    description: "Version 1.0.2"
+repository-artifact: "https://zenodo.org/records/21837614"
