@@ -1,13 +1,13 @@
-cff-version: 1.2.1
+cff-version: 1.2.3
 message: "この研究成果を利用する場合は、以下の情報を用いて引用してください。"
 type: dataset
-title: "品川弥二郎発信書簡所在地情報: 所蔵情報の微修正"
+title: "品川弥二郎発信書簡所在地情報: 所蔵情報の追加"
 authors:
   - family-names: "IKEDA"
     given-names: "Sanae"
     orcid: "https://orcid.org/0009-0005-9627-0324"
-version: "1.2.2"
-date-released: 2026-09-29
+version: "1.2.3"
+date-released: 2026-09-30
 license: CC-BY-4.0
 identifiers:
   - type: doi
